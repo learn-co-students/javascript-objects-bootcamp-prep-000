@@ -48,3 +48,22 @@ describe('changePlaylistSong', function(){
   });
 
 });
+
+describe('readPlaylist', function(){
+  var myPlaylist;
+
+  beforeEach(function() {
+    myPlaylist = {};
+  });
+
+  it("returns an object with an updated key-value pair", function(){
+    spyOn(console, 'log');
+    addToPlaylist(myPlaylist, "out of the woods", "taylor swift");
+    addToPlaylist(myPlaylist, "hotline bling", "drake");
+    readPlaylist(myPlaylist);
+
+    expect(console.log.calls.argsFor(0)).toEqual(["The song out of the woods by taylor swift is in your playlist"])
+    expect(console.log.calls.argsFor(1)).toEqual(["The song hotline bling by drake is in your playlist"])
+  });
+
+});
