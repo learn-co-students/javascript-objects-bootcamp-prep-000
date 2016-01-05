@@ -70,3 +70,15 @@ meals["breakfast"] = "oatmeal and banana";
 meals;
 //returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "teak and potatoes"}
 ```
+
+## Instructions
+
++ Create an object that is stored in the variable `myPlaylist`. The key of this object will be the artists and the values will be the song titles.
+
++ Create a function `addToPlaylist` which accepts three parameters: the playlist (an object), a song (a string), and an artist (a string). The body of the function should add the song and artist as a key-value pair to the playlist object. The function should return the whole playlist.
+
++ Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
+
++ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist name, and the new song you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
+
+
