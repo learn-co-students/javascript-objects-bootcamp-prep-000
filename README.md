@@ -6,6 +6,7 @@
 + Access a value from an object
 + Add a key-value pair to an object
 + Delete a key-value pair from an object
++ Iterate over key-value pairs in an object
 
 ## Intro 
 
@@ -68,8 +69,28 @@ Let's say we actually ate oatmeal and a banana for breakfast, and we want to upd
 var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
 meals["breakfast"] = "oatmeal and banana";
 meals;
-//returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "teak and potatoes"}
+//returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "steak and potatoes"}
 ```
+
+## Iterating Over An Object
+
+In order to iterate over an object, we need to use a new loop, the for in loop. We'll stick with the meals object for this example. The for in loop looks something like this:
+
+```js
+for (variable in object) {
+  // code to be executed goes here
+}
+```
+In this case, we want to iterate over every key value pair, so our variable is `key` and our object is `meals`. JavaScript will automagically take every key in the hash in turn and print out in the console, `"for breakfast I ate oatmeal"`, `"for lunch I ate turkey sandwich"`, `"for dinner I ate steak and potatoes"`.
+
+
+```js
+var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
+for (var key in meals) {
+  console.log("for " + key + " I ate " + meals[key]);
+}
+```
+
 
 ## Instructions
 
@@ -81,4 +102,4 @@ meals;
 
 + Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist name, and the new song you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
 
-
++ Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs.
