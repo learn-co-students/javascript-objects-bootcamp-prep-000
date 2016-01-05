@@ -1,11 +1,11 @@
-# JavaScript Hashes
+# JavaScript "Hashes"
 
 ## Objectives
 + Explain what a hash in JavaScript is
-+ Create a hash in JS
-+ Access a value from a hash
-+ Add a key-value pair to a hash
-+ Delete a key-value pair from a hash
++ Create an object in JS
++ Access a value from an object
++ Add a key-value pair to an object
++ Delete a key-value pair from an object
 
 ## Intro 
 
