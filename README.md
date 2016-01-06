@@ -72,6 +72,24 @@ meals;
 //returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "steak and potatoes"}
 ```
 
+## Check Empty Object
+
+You can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object.
+
+```js
+var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
+Object.keys(meals);
+//returns ["breakfast", "lunch", "dinner"]
+```
+
+You can also count the number of key-value pairs by doing something like this:
+
+```js
+var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
+Object.keys(meals).length;
+//returns 3
+```
+
 ## Iterating Over An Object
 
 In order to iterate over an object, we need to use a new loop, the for in loop. We'll stick with the meals object for this example. The for in loop looks something like this:
