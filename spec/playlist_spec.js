@@ -56,7 +56,7 @@ describe('readPlaylist', function(){
     myPlaylist = {};
   });
 
-  it("returns an object with an updated key-value pair", function(){
+  it("returns prints out each song and artist in the console", function(){
     spyOn(console, 'log');
     addToPlaylist(myPlaylist, "out of the woods", "taylor swift");
     addToPlaylist(myPlaylist, "hotline bling", "drake");
@@ -64,6 +64,13 @@ describe('readPlaylist', function(){
 
     expect(console.log.calls.argsFor(0)).toEqual(["The song out of the woods by taylor swift is in your playlist"])
     expect(console.log.calls.argsFor(1)).toEqual(["The song hotline bling by drake is in your playlist"])
+  });
+
+  it("prints out 'your playlist is empty' if there are no songs in the playlist", function(){
+    spyOn(console, 'log');
+    readPlaylist(myPlaylist);
+
+    expect(console.log.calls.argsFor(0)).toEqual(["your playlist is empty"])
   });
 
 });
