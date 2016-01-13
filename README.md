@@ -10,9 +10,10 @@
 
 ## Intro 
 
-In JavaScript, all objects are effectively key-value pairs. We're not going to talk about objects in relation to Object Orientation, but objects as hashes. We will eventually get to objects and properties of objects, but right now we're just focused on how to create, manipulate and delete key-value pairs from a "hash".
+In JavaScript, all objects are effectively key-value pairs. We're not going to talk about objects in relation to Object Orientation, but objects as hashes. We will eventually get to objects and properties of objects, but right now we're just focused on how to create, manipulate and delete key-value pairs from a "hash". 
 
-From here on out, we'll be referring to a hash as an object. Every time you see the word "object" think "hash".
+JavaScript Objects behave sort of like a cross between Classes and Hashes in Ruby. For now, we're just going to focus on how to use them like a hash. From here on out, we'll be referring to a hash as an object. Every time you see the word "object" think "hash".
+
 
 
 ## Creating Objects
@@ -28,6 +29,14 @@ Object Constructor:
 ```js
 var meals = new Object();
 ```
+
+You can also create an object with key-value pairs:
+
+```js
+var meals = {breakfast: "oatmeal"};
+```
+
+Note that JavaScript does not have `=>` syntax. You mark a key with `:` and set the value directly after.
 
 ## Adding To An Object
 
@@ -74,7 +83,7 @@ meals;
 
 ## Check Empty Object
 
-You can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object.
+Unline Ruby, JavaScript does not have a handy `.empty?` convenience method. But, you can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object. 
 
 ```js
 var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
