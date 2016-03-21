@@ -127,8 +127,10 @@ for (var key in meals) {
 
 + Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
-+ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist name, and the new song you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
++ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the new song, and the artist name you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
 
 + Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs. The function should check to see if there are songs on the playlist. If there aren't any, it should print out `"your playlist is empty"`.
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme' title='JavaScript Hashes'>JavaScript Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme'>Hashes in JS</a> on Learn.co and start learning to code for free.</p>
