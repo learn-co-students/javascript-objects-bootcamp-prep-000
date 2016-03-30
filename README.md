@@ -50,7 +50,7 @@ meals["dinner"] = "steak and potatoes"
 ```
 
 ## Accessing A Value
-Just like in Ruby, we access the value of an object from it's key:
+Just like in Ruby, we access the value of an object from its key:
 
 ```js
 var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"}
