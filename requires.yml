@@ -1,5 +1,0 @@
-javascripts:
-  files:
-    - playlist.js
-  specs:
-    - spec/playlist_spec.js

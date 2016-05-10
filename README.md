@@ -1,136 +1,195 @@
-# JavaScript "Hashes"
+# JavaScript Objects
 
 ## Objectives
-+ Explain what a hash in JavaScript is
++ Explain what an object is in JavaScript is
 + Create an object in JS
 + Access a value from an object
 + Add a key-value pair to an object
 + Delete a key-value pair from an object
 + Iterate over key-value pairs in an object
 
-## Intro 
+## Intro
 
-In JavaScript, all objects are effectively key-value pairs. We're not going to talk about objects in relation to Object Orientation, but objects as hashes. We will eventually get to objects and properties of objects, but right now we're just focused on how to create, manipulate and delete key-value pairs from a "hash". 
-
-JavaScript Objects behave sort of like a cross between Classes and Hashes in Ruby. For now, we're just going to focus on how to use them like a hash. From here on out, we'll be referring to a hash as an object. Every time you see the word "object" think "hash".
-
+In JavaScript, all objects are effectively key-value pairs. That means that in an object, you can look something up by its _key_ and get back its _value_ — super handy. For this reason, you might hear some people refer to objects as "dictionaries." We're going to call them "objects" because they're instances of JavaScript's capital-O `Object`.
 
 
 ## Creating Objects
 
-You can create an object in two different ways, with the literal syntax and with the new Object constructor.
+You can create an object in two different ways, with the literal syntax and with the `Object` _constructor_. A **constructor** does just what it's name implies: it constructs objects (in this case, `Object` objects). Be sure to follow along in your console.
 
 Literal Syntax:
+
 ```js
 var meals = {};
 ```
 
+The curly braces (`{}`) are an object! You just created your first one!
+
+
 Object Constructor:
+
 ```js
 var meals = new Object();
 ```
 
-You can also create an object with key-value pairs:
+You just created another object!
+
+You can also initialize an object with key-value pairs when you create it:
 
 ```js
-var meals = {breakfast: "oatmeal"};
+var meals = { breakfast: "oatmeal" };
+
+// or, equivalently
+
+var meals = new Object({ breakfast: 'oatmeal' })
 ```
 
-Note that JavaScript does not have `=>` syntax. You mark a key with `:` and set the value directly after.
+In this case, `breakfast` is the key and `"oatmeal"` is the value.
 
-## Adding To An Object
+**Note that all keys in JavaScript objects are strings.** This means that even though you can create an object `{1: 'is the loneliest number'}`, the key here, `1` gets turned into the string `'1'`. Values can be of any type.
 
-Now that we have an empty object, it's time to start adding key-value pairs:
+**Note** also that keys must be unique. If you were to initialize the following object
 
-```js
-var meals = {}
-meals["breakfast"] = "oatmeal"
-meals["lunch"] = "turkey sandwich"
-meals["dinner"] = "steak and potatoes"
+``` javascript
+var meals = {
+  breakfast: 'eggs',
+  breakfast: 'bacon'
+}
 ```
 
-## Accessing A Value
-Just like in Ruby, we access the value of an object from its key:
+And then check on the value of `meals`, you'd see
 
-```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"}
-meals["breakfast"] //returns "oatmeals"
-meals["lunch"] // returns "turkey sandwich"
-meals["dinner"] // returns "steak and potatoes"
+``` javascript
+{ breakfast: 'bacon' }
+```
+
+Only the last key-value pair to use `breakfast` as the key gets saved! Values don't have to be unique, though:
+
+
+``` javascript
+var meals = {
+  breakfast: 'avocado',
+  lunch: 'avocado',
+  dinner: 'avocado'
+}
+```
+
+We might want to consider diversifying our diet, but otherwise the above object works as expected.
+
+
+Similarly, if you have a variable `const firstMeal = 'breakfast'}` and tried to create an object `var meals = { firstMeal: 'oatmeal' }`, the `meals` object's key would be `'firstMeal'`, _not_ `'breakfast'`.
+
+**Top Tip**: ES 6 provides a way to use variables as object keys — you have to wrap the key in square brackets (`[]`). Using the above example, you could write `var meals = { [firstMeal]: 'oatmeal' }` and then `meals` would be `{ breakfast: 'oatmeal' }`. Pretty cool, right?
+
+We can access the values in an object using dot notation
+
+``` javascript
+meals.breakfast // 'oatmeal'
+```
+
+or square-bracket notation
+
+``` javascript
+meals['breakfast'] // 'oatmeal'
+```
+
+Note that when we use dot syntax, we _do not_ wrap the key in quotes, and the key must be able to be treated as a string. Square-bracket syntax requires quotes if we're referencing the key directly, but it also gives us additional flexibility — we could also do
+
+``` javascript
+meals[firstMeal] // 'oatmeal
+```
+
+using the `firstMeal` variable (which is equal to the string `'breakfast'`).
+
+## Adding to an Object
+
+It's great that we can initialize an object with some key-value pairs
+
+``` javascript
+var meals = {
+  breakfast: 'oatmeal',
+  lunch: 'burrito',
+  dinner: 'steak'
+}
+```
+
+but we might not always know what keys and values we're going to have ahead of time. Luckily, we can add new key-value pairs to objects.
+
+If we know the name of the key and its value, we can use the dot syntax to add the new pair:
+
+``` javascript
+meals.snack = 'yogurt';
+```
+
+See that dot `.`? That has a special meaning for objects — it tells JavaScript that we're going to be accessing the property that goes by the _string_ that comes after it (in this case, `'snack'`. So here, we _assign_ (`=`) the value 'yogurt' to the key `'snack'` in the object. We can access this new value as before:
+
+``` javascript
+meals.snack // 'yogurt'
+meals['snack'] // 'yogurt'
+meals.lunch // 'burrito'
+```
+
+We can also add key-value pairs using bracket notation:
+
+``` javascript
+meals['second breakfast'] = 'bagel'
+```
+
+This comes in handy, as in the above example, when our key is not a simple string. We can also use variables as keys this way:
+
+``` javascript
+var sweetMeal = 'dessert'
+
+meals[sweetMeal] = 'cake';
+
+meals.dessert // 'cake'
+meals[sweetMeal] // 'cake'
+```
+
+Lest it seem like we can only add new things, we can update existing key-value pairs by using the key:
+
+``` javascript
+meals.breakfast = 'cereal'
 ```
 
 ## Deleting A Key-Value Pair
 
-Let's say it's only 5pm and we haven't actually eaten dinner yet, so we want to delete the dinner key-value pair:
+Let's say it's only 5 p.m. and we've changed our mind about dinner, so we want to delete the dinner key-value pair:
 
 ```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
-delete meals["dinner"];
+var meals = { breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes" };
+
+// the `delete` operator returns `true` if it has successfully
+// deleted, `false` otherwise
+delete meals.dinner; // true
+
 meals;
-//returns {breakfast: "oatmeal", lunch: "turkey sandwich"}
+// returns { breakfast: "oatmeal", lunch: "turkey sandwich" }
 ```
 ## Changing A Value
-
 
 Let's say we actually ate oatmeal and a banana for breakfast, and we want to update the value the `breakfast` key is storing:
 
 ```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
-meals["breakfast"] = "oatmeal and banana";
+var meals = {
+  breakfast: "oatmeal",
+  lunch: "turkey sandwich",
+  dinner: "steak and potatoes"
+};
+meals.breakfast = ["oatmeal", "banana"];
+
 meals;
-//returns {breakfast: "oatmeal and banana", lunch: "turkey sandwich", dinner: "steak and potatoes"}
+// {
+//   breakfast: ["oatmeal", "banana"],
+//   lunch: "turkey sandwich",
+//   dinner: "steak and potatoes"
+//  }
 ```
-
-## Check Empty Object
-
-Unlike Ruby, JavaScript does not have a handy `.empty?` convenience method. But, you can check to see if your object is empty by using `Object.keys(yourObject)` which returns an array of all the keys in your object. 
-
-```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
-Object.keys(meals);
-//returns ["breakfast", "lunch", "dinner"]
-```
-
-You can also count the number of key-value pairs by doing something like this:
-
-```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
-Object.keys(meals).length;
-//returns 3
-```
-
-## Iterating Over An Object
-
-In order to iterate over an object, we need to use a new loop, the for in loop. We'll stick with the meals object for this example. The for in loop looks something like this:
-
-```js
-for (variable in object) {
-  // code to be executed goes here
-}
-```
-In this case, we want to iterate over every key value pair, so our variable is `key` and our object is `meals`. JavaScript will automagically take every key in the hash in turn and print out in the console, `"for breakfast I ate oatmeal"`, `"for lunch I ate turkey sandwich"`, `"for dinner I ate steak and potatoes"`.
-
-
-```js
-var meals = {breakfast: "oatmeal", lunch: "turkey sandwich", dinner: "steak and potatoes"};
-for (var key in meals) {
-  console.log("for " + key + " I ate " + meals[key]);
-}
-```
-
 
 ## Instructions
 
-+ Create an object that is stored in the variable `myPlaylist`. The key of this object will be the artists and the values will be the song titles.
-
-+ Create a function `addToPlaylist` which accepts three parameters: the playlist (an object), a song (a string), and an artist (a string). The body of the function should add the song and artist as a key-value pair to the playlist object. The function should return the whole playlist.
-
-+ Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
-
-+ Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the new song, and the artist name you would like to add). The body of the function should update the artist key with the new song value, and return the updated playlist.
-
-+ Create a function `readPlaylist`, which accepts one argument (the playlist object). The function should iterate over the key-value pairs and use `console.log` to print out the playlist's artists and songs. The function should check to see if there are songs on the playlist. If there aren't any, it should print out `"your playlist is empty"`.
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme' title='JavaScript Hashes'>JavaScript Hashes</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-hashes-readme'>Hashes in JS</a> on Learn.co and start learning to code for free.</p>
+1. Open `objects.js`
+2. Assign an object to the variable `playlist` — the keys will be artist names and the values will be song titles. (What limitation does this impose on our `playlist`?)
+3. Create a function `addToPlaylist` which accepts three parameters: the playlist (an object), an artist name (a string), and a song title. The body of the function should add the song and artist as a key-value pair to the playlist object. The function should return the whole playlist.
+4. Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist name). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
+5. Create a function `changePlaylistSong`, which accepts three arguments (the playlist object, the artist's name, and the new song title). The body of the function should update the artist key with the new song value (or add the new artist if it doesn't exist yet), and return the updated playlist.
