@@ -152,7 +152,68 @@ Lest it seem like we can only add new things, we can update existing key-value p
 meals.breakfast = 'cereal'
 ```
 
-## Deleting A Key-Value Pair
+Note that all of the changes highlighted above are _destructive_. This means that if we apply these changes to an object by passing the object to a function, the _original object_ will change. Let's try it out:
+
+``` javascript
+function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
+  obj[key] = value
+
+  return obj
+}
+
+const recipe = { eggs: 3 }
+
+// returns { eggs: 3, flour: '3 cups' }
+destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
+
+// but also:
+
+recipe // { eggs: 3, flour: '3 cups' }
+```
+
+Hm, but what if that's not what we wanted to do? What if we wanted to create a _new_ object that stores both the old and the new properties?
+
+### `Object.assign()`
+
+We can use `Object.assign()` to create a new object and pass it properties from existing objects. `Object.assign` takes any number of objects as its arguments, and it merges them from left to right (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
+
+``` javascript
+// { foo: 'bar' }
+Object.assign({}, { foo: 'bar' })
+
+// { eggs: 3, flour: '1 cup' }
+Object.assign({ eggs: 3 }, { flour: '1 cup' })
+
+// { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
+Object.assign({ eggs: 3 }, { chocolate: '1 cup', flour: '2 cups' }, { flour: '1/2 cup' })
+```
+
+The power of `Object.assign` allows us to rewrite the above update function in a non-destructive way:
+
+``` javascript
+function updateObjectWithKeyAndValue(obj, key, value) {
+  // it's important that we merge everything into
+  // a new object
+  return Object.assign({}, obj, { [key]: value })
+}
+
+const recipe = { eggs: 3 }
+
+// returns `{ eggs: 3, chocolate: '1 cup' }`
+updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
+
+recipe // { eggs: 3 }
+```
+
+Sweet (and not just because of the chocolate)! We can make our update function even terser:
+
+``` javascript
+function updateObjectWithObject(targetObject, updatesObject) {
+  return Object.assign({}, targetObject, updatesObject)
+}
+```
+
+## Deleting a Key-Value Pair
 
 Let's say it's only 5 p.m. and we've changed our mind about dinner, so we want to delete the dinner key-value pair:
 
@@ -166,7 +227,8 @@ delete meals.dinner; // true
 meals;
 // returns { breakfast: "oatmeal", lunch: "turkey sandwich" }
 ```
-## Changing A Value
+
+## Changing a Value
 
 Let's say we actually ate oatmeal and a banana for breakfast, and we want to update the value the `breakfast` key is storing:
 
@@ -184,6 +246,32 @@ meals;
 //   lunch: "turkey sandwich",
 //   dinner: "steak and potatoes"
 //  }
+```
+
+Again, we can change a value non-destructively (preserving the original object) using `Object.assign`:
+
+``` javascript
+var meals = {
+  breakfast: "oatmeal",
+  lunch: "turkey sandwich",
+  dinner: "steak and potatoes"
+};
+
+
+// returns {
+//   breakfast: ["oatmeal", "banana"],
+//   lunch: "turkey sandwich",
+//   dinner: "steak and potatoes"
+//  }
+Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] })
+
+
+// still {
+//   breakfast: "oatmeal",
+//   lunch: "turkey sandwich",
+//   dinner: "steak and potatoes"
+// };
+meals
 ```
 
 ## Instructions
