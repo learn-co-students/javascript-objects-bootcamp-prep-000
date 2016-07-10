@@ -10,7 +10,7 @@
 
 ## Intro
 
-When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can find out all of the information the dictionary has to tell us about it.
+When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can find out all of the information the dictionary has to tell us about it.
 
 To offer another example, imagine a planner. The planner has a list of dates, and each date has a list of times; at each time, there's an event (or not). The planner gives us a way of _associating_ what's happening with the time when it happens. If we look up a given time, we will see what (if anything) is happening then.
 
@@ -81,7 +81,7 @@ var meals = {
 
 We might want to consider diversifying our diet, but otherwise the above object works as expected.
 
-Similarly, if you have a variable `const firstMeal = 'breakfast'}` and tried to create an object `var meals = { firstMeal: 'oatmeal' }`, the `meals` object's key would be `'firstMeal'`, _not_ `'breakfast'`.
+Similarly, if you have a variable `const firstMeal = 'breakfast'` and tried to create an object `var meals = { firstMeal: 'oatmeal' }`, the `meals` object's key would be `'firstMeal'`, _not_ `'breakfast'`.
 
 **Top Tip**: ES 6 provides a way to use variables as object keys — you have to wrap the key in square brackets (`[]`). Using the above example, you could write `var meals = { [firstMeal]: 'oatmeal' }` and then `meals` would be `{ breakfast: 'oatmeal' }`. Pretty cool, right?
 
@@ -167,8 +167,8 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 
 const recipe = { eggs: 3 }
 
-// returns { eggs: 3, flour: '3 cups' }
 destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
+// returns { eggs: 3, flour: '3 cups' }
 
 // but also:
 
@@ -182,14 +182,14 @@ Hm, but what if that's not what we wanted to do? What if we wanted to create a _
 We can use `Object.assign()` to create a new object and pass it properties from existing objects. `Object.assign` takes any number of objects as its arguments, and it merges them from left to right (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
 
 ``` javascript
-// { foo: 'bar' }
 Object.assign({}, { foo: 'bar' })
+// { foo: 'bar' }
 
-// { eggs: 3, flour: '1 cup' }
 Object.assign({ eggs: 3 }, { flour: '1 cup' })
+// { eggs: 3, flour: '1 cup' }
 
-// { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
 Object.assign({ eggs: 3 }, { chocolate: '1 cup', flour: '2 cups' }, { flour: '1/2 cup' })
+// { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
 ```
 
 The power of `Object.assign` allows us to rewrite the above update function in a non-destructive way:
@@ -203,8 +203,8 @@ function updateObjectWithKeyAndValue(obj, key, value) {
 
 const recipe = { eggs: 3 }
 
-// returns `{ eggs: 3, chocolate: '1 cup' }`
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
+// returns `{ eggs: 3, chocolate: '1 cup' }`
 
 recipe // { eggs: 3 }
 ```
