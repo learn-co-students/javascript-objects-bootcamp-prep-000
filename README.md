@@ -10,7 +10,7 @@
 
 ## Intro
 
-When we open a run across a word that we don't know, we often consult a dictionary. A dictionary is, at core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can find out all of the information the dictionary has to tell us about it.
+When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can find out all of the information the dictionary has to tell us about it.
 
 To offer another example, imagine a planner. The planner has a list of dates, and each date has a list of times; at each time, there's an event (or not). The planner gives us a way of _associating_ what's happening with the time when it happens. If we look up a given time, we will see what (if anything) is happening then.
 
@@ -284,3 +284,5 @@ meals
 2. Assign an object to the variable `playlist` — the keys will be artist names and the values will be song titles. (What limitation does this impose on our `playlist`?)
 3. Create a function `updatePlaylist` which accepts three parameters: the playlist (an object), an artist name (a string), and a song title. The body of the function should add the song and artist as a key-value pair to the playlist object. The function should return the whole playlist.
 4. Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist name). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-objects'>Javascript Objects</a> on Learn.co and start learning to code for free.</p>
