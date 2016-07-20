@@ -20,7 +20,7 @@ In JavaScript, the barebones associative data structure is called an _object_. T
 
 ## Creating Objects
 
-You can create an object in two different ways, with the literal syntax and with the `Object` _constructor_. A **constructor** does just what it's name implies: it constructs objects (in this case, `Object` objects). Be sure to follow along in your console.
+You can create an object in two different ways, with the literal syntax and with the `Object` _constructor_. A **constructor** does just what its name implies: it constructs objects (in this case, `Object` objects). Be sure to follow along in your console.
 
 Literal Syntax:
 
