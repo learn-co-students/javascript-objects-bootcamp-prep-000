@@ -11,8 +11,8 @@
 ## Intro
 
 When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of
-words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can find
-out all of the information the dictionary has to tell us about it.
+words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can just
+look it up in the dictionary and get all its information.
 
 To offer another example, imagine a planner. The planner has a list of dates, and each date has a list of times; at each
 time, there's an event (or not). The planner gives us a way of _associating_ what's happening with the time when it
