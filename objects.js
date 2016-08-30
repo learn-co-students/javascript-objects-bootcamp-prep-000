@@ -1,9 +1,13 @@
-var playlist = { artistName: 'songTitle' };
+var playlist = {
+  Kanye: "Gold Digger"
+};
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  return playlist = {...playlist, artistName, songTitle}
+function updatePlaylist(playlist, artist, title) {
+  playlist[artist] = title
+  return playlist
 }
 
-function removeFromPlaylist(playlist, artistName ) {
-  var removeFromPlaylist = {...playlist, artistName}
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
 }
