@@ -5,7 +5,6 @@
 In this lesson, we'll introduce, define, and work with objects. 
 
 ## Objectives
-+ Explain what an object is in JavaScript is
 + Create an object in JS
 + Access a value from an object
 + Add a key-value pair to an object
