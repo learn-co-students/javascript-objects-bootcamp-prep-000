@@ -1,5 +1,9 @@
 # JavaScript Objects
 
+## Overview
+
+In this lesson, we'll introduce, define, and work with objects. 
+
 ## Objectives
 + Explain what an object is in JavaScript is
 + Create an object in JS
@@ -8,7 +12,7 @@
 + Delete a key-value pair from an object
 + Iterate over key-value pairs in an object
 
-## Intro
+## Introduction 
 
 When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of
 words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can just
@@ -199,7 +203,7 @@ recipe // { eggs: 3, flour: '3 cups' }
 Hm, but what if that's not what we wanted to do? What if we wanted to create a _new_ object that stores both the old and
 the new properties?
 
-### `Object.assign()`
+## `Object.assign()`
 
 We can use `Object.assign()` to create a new object and pass it properties from existing objects. `Object.assign` takes
 any number of objects as its arguments, and it merges them from left to right (so if two objects share a key, the
@@ -306,11 +310,14 @@ meals
 ## Instructions
 
 1. Open `objects.js`
+
 2. Assign an object to the variable `playlist` — the keys will be artist names and the values will be song titles. (What
-limitation does this impose on our `playlist`?)
+limitation does this impose on our `playlist`?)\
+
 3. Create a function `updatePlaylist` which accepts three parameters: the playlist (an object), an artist name (a
 string), and a song title. The body of the function should add the song and artist as a key-value pair to the playlist
 object. The function should return the whole playlist.
+
 4. Create a function `removeFromPlaylist` which accepts two arguments (the playlist object and the artist name). The
 body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
