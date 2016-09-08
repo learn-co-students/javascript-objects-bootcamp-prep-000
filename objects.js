@@ -1,11 +1,11 @@
-var playlist = {"Phil Ochs" : "songs"};
+var playlist = {"Foo Figthers" : "Everlong"};
 
-function updatePlaylist(object, name, song) {
-  object.name = song;
-  return object;
+function updatePlaylist(playlist, artistName, songTitle) {
+    playlist[artistName] = songTitle
+    return playlist
 }
 
-function removeFromPlaylist(object, name) {
-  delete object. name;
-  return object;
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
 }
