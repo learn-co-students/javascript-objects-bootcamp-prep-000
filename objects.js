@@ -1,13 +1,12 @@
-var playlist = {jb : 'sorry', mj : 'earthsong', akon : 'ghetto'}
+var playlist = {mj : 'earthsong', el : 'insomniac', akon : 'ghetto'}
 
-
-function updatePlaylist(playlist, el, insomniac)
+function updatePlaylist(playlist, shaggy, wazunme)
 {
-  return Object.assign ({}, playlist, {[el] : insomniac})
+  return Object.assign({}, playlist, {[shaggy] : wazunme});
 }
 
-function removeFromPlaylist(playlist, el)
+function removeFromPlaylist(playlist, mj)
 {
- delete playlist.el;
- return playlist;
+  delete playlist[mj];
+  return playlist;
 }
