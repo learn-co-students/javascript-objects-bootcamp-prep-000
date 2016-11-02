@@ -3,7 +3,7 @@ var playlist = {
   Beyonce: 'Six Inch'
 }
 
-function updatePlaylist(playlist, artist, song title) {
-  playlist['David Bowie']=Changes
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
   return playlist
 }
