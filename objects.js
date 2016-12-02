@@ -4,6 +4,12 @@ var playlist = {
   JoyDivision : "Love Will Tear Us Apart"
 }
 
-funtion updatePlaylist(playlist, artistName, songTitle) {
-  return Object.assign({} playlist, {[key] : value})
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist [artistName] = songTitle;
+  return playlist;
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist [artistName];
+  return playlist; 
 }
