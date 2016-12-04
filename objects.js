@@ -1,11 +1,11 @@
 var playlist = {Metallica:"Fuel"}
 
-function updatePlaylist(inputObject, artistName, songTitle){
-  inputObject[artistName] = songTitle
-  return inputObject
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle
+  return playlist
 }
 
-function removeFromPlaylist(inputObject, artistName){
-  delete inputObject[artistName]
-  return inputObject
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName]
+  return playlist
 }
