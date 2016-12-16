@@ -1,7 +1,12 @@
+var playlist = {rp: "telugu", sp: "tamil"};
 
-var playlist = new playlist({rp:"telugu", sp:"tamil"});
-
-function updatePlaylist (playlist, artistName, songTitle){
-  var newp = playlist.assign[su:"kan"];
-  return newp;
+function updatePlaylist(playlist, artistName, songTitle)
+{
+playlist[artistName] = songTitle;
+return playlist;
+}
+function removeFromPlaylist(playlist, artistName)
+{
+delete playlist[artistName];
+return playlist;
 }
