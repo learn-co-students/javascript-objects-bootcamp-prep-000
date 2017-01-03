@@ -1,4 +1,3 @@
-
 // Learn.co Bootcamp Prep 11 JavaScript Objects
 
 // Assign object to playlist variable
