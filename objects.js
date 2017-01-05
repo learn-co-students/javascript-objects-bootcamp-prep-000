@@ -1,19 +1,16 @@
 var playlist = {
-weezer: "Say It Ain't So",
-petitBiscut: "Sunset Lover"
-};
+  'Lupe Fiasco': 'Out Of My Head',
+   Foals: 'Mountain At My Gates'
+}
 
-function updatePlaylist(playlist, artistName, songTitle)
+function updatePlaylist(playlist, artist, song)
 {
-  playlist['Phil Ochs'] = "Here's to the State of Mississippi"
-
+  playlist[artist] = song
   return playlist
 }
 
-function removeFromPlaylist(playlist, artistName)
+function removeFromPlaylist(playlist, artist)
 {
-  playlist.Kanye = "Gold Digger";
-  delete playlist.Kanye;
-
+  delete playlist[artist]
   return playlist
 }
