@@ -1,4 +1,4 @@
-var playlist = {artist: "", song: ""};
+var playlist = {artistName: undefined, songTitle: undefined};
 
 function updatePlaylist(playlist, artistName, songTitle) {
 
@@ -8,6 +8,7 @@ function updatePlaylist(playlist, artistName, songTitle) {
 
 function removeFromPlaylist(playlist, artistName) {
 
+  var playlist = {artistName: undefined}
   delete playlist.artistName;
   return playlist
   
