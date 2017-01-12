@@ -28,4 +28,5 @@ describe('objects', () => {
         to.eql({})
     })
   })
+
 })
