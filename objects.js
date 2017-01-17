@@ -1,8 +1,16 @@
 var playlist = {
-  theWeeknd = 'Secrets',
-  adele = 'Hello',
+  'The Weeknd': 'Secrets',
+  Adele: 'Hello',
 };
 
-function updatePlaylist(playlist, 'Madonna', 'like a virgin')
+function updatePlaylist(playlist, artist, song) {
+  playlist.artist = song
 
-function removeFromPlaylist()
+  return playlist
+}
+
+function removeFromPlaylist(playlist, artist) {
+  delete playlist.artist
+
+  return playlist
+}
