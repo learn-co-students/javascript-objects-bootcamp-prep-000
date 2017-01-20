@@ -7,7 +7,7 @@ function updatePlaylist(playlist, artistName, songTitle){
 }
 
 function removeFromPlaylist(playlist, artistName){
-  var prop = artistName;
-  delete playlist[prop];
+  var property = artistName;
+  delete playlist[property];
   return playlist;
 }
