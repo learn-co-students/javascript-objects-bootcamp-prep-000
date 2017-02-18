@@ -1,12 +1,12 @@
-var playlist = {kanye:"song"}
+var playlist = {kanyeWest:"song"};
 
-function updatePlaylist(playlistArg, artistName, songTitle) {
-      playlistArg[artistName] = songTitle
+function updatePlaylist(playlistArg,artistNameArg,songTitleArg) {
+      playlistArg[artistNameArg]=songTitleArg
       return playlistArg
-
 }
-function removeFromPlaylist(playlistArg, artistName) {
-  delete playlistArg[artistName]
+
+function removeFromPlaylist(playlistArg, artistNameArg) {
+  delete playlistArg[artistNameArg]
   return playlistArg
 }
 
