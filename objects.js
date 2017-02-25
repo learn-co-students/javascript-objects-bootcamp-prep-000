@@ -1,0 +1,14 @@
+var playlist = {
+  MaRLo : "Join Us Now",
+  Kaskade : "Atmosphere"
+}
+
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artisName] = songTitle
+  return playlist
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
+}
