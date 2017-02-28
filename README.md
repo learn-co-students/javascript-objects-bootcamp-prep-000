@@ -103,7 +103,7 @@ meals['breakfast'] // 'oatmeal'
 Note that when we use dot syntax, we _do not_ wrap the key in quotes, and the key must be able to be treated as a string. Square-bracket syntax requires quotes if we're referencing the key directly, but it also gives us additional flexibility — we could also do
 
 ``` javascript
-meals[firstMeal] // 'oatmeal
+meals[firstMeal] // 'oatmeal'
 ```
 
 using the `firstMeal` variable (which is equal to the string `'breakfast'`).
