@@ -116,7 +116,7 @@ Square-bracket syntax requires quotes if we're referencing the key directly, but
 — we could also do
 
 ``` javascript
-meals[firstMeal] // 'oatmeal
+meals[firstMeal] // 'oatmeal'
 ```
 
 using the `firstMeal` variable (which is equal to the string `'breakfast'`).
