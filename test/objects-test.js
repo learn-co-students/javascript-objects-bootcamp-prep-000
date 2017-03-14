@@ -25,7 +25,7 @@ describe('objects', () => {
   describe('removeFromPlaylist(playlist, artistName)', () => {
     it('removes `artistName` from `playlist`', () => {
       expect(removeFromPlaylist({ Kanye: "Gold Digger" }, "Kanye")).
-        to.eql({})
+        to.eql(undefined)
     })
   })
 })
