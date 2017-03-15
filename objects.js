@@ -1,10 +1,9 @@
 
-var playlist = new Object({artistName: 'songTitle'});
+var playlist = new Object({mana: 'songTitle'});
 
 function updatePlaylist(playlist, artistName, songTitle) {
- playlist[artistName] = songTitle
- return playlist
-
+  playlist[artistName] = songTitle;
+  return playlist
 }
 
 function removeFromPlaylist(playlist, artistName) {
