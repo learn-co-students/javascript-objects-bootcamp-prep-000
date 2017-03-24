@@ -2,7 +2,7 @@ var playlist = {'Pink Floyd' : 'Wish You Were Here'};
 
 function updatePlaylist(playlist, artistName, songTitle) {
   // 'destructive' method
-    //  playlist[artistName] = songTitle;
+    // return playlist[artistName] = songTitle;
 
   //  'non-destructive' method returns new string.
     // preserves original playlist Obj.
