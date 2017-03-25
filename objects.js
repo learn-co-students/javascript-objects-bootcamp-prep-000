@@ -1,6 +1,3 @@
-
-// const objects = {'this is an object'}
-
 var playlist = {};
 playlist[1] = 'a';
 
