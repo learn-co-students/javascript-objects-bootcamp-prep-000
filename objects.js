@@ -1,5 +1,7 @@
+
 var playlist = {
-  artist: "song"
+  'Foo Fighters': 'Everlong',
+  Prince: 'Purple Rain'
 };
 
 function updatePlaylist(playlist, artist, song) {
@@ -14,5 +16,3 @@ function removeFromPlaylist(playlist, artist) {
 
   return playlist;
 }
-
-updatePlaylist(playlist, "Prine", "Purple Rain");
