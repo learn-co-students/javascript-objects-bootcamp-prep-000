@@ -14,3 +14,5 @@ function removeFromPlaylist(playlist, artist) {
 
   return playlist;
 }
+
+updatePlaylist(playlist, "Prine", "Purple Rain");
