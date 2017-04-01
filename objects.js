@@ -1,5 +1,5 @@
 
-var playlist = new Object({test: "ttt"});
+var playlist = new Object();
 
 function updatePlaylist(playlist,artistName,songTitle) {
   playlist[artistName] = songTitle;
