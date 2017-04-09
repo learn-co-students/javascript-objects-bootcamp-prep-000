@@ -7,7 +7,7 @@ var playlist= {Stratovarius:'Black Diamond', MagodeOz:'Molinos de Viento'}
 
   function removeFromPlaylist(obj,key){
 
-delete obj.key;
+delete obj[key]
 
 return obj;
 
