@@ -182,7 +182,7 @@ Hm, but what if that's not what we wanted to do? What if we wanted to create a _
 
 ## `Object.assign()`
 
-We can use `Object.assign()` to create a new object and pass it properties from existing objects. `Object.assign` takes any number of objects as its arguments, and it merges them from left to right (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
+We can use `Object.assign()` to create a new object and pass it properties from existing objects. The first value is the target object that gets modified. All the values afterward can be any number of objects. It then copies them from left to right onto the target object (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
 
 ``` javascript
 Object.assign({}, { foo: 'bar' })
@@ -199,11 +199,15 @@ The power of `Object.assign` allows us to rewrite the above update function in a
 
 ``` javascript
 function updateObjectWithKeyAndValue(obj, key, value) {
-  // it's important that we merge everything into
-  // a new object
+ 
   return Object.assign({}, obj, { [key]: value })
 }
-
+  // it's important that we merge everything into
+  // a new object such as the empty {}. 
+	// Otherwise, the object obj will be modified. 
+	// Test what happens if this line was written as:
+	// return Object.assign(obj, { [key]: value })
+	
 const recipe = { eggs: 3 }
 
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
