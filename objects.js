@@ -1,12 +1,18 @@
 
+
 var playlist = new Object();
-playlist = {"bob":"the wind in my heart"};
+var artistName;
+var songTitle;
+playlist={"bob":"wind"};
 
 
-function updatePlaylist(playlist,artistName,songTitle) {
-  playlist[artistName]=[songTitle];
+
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName]=songTitle;
+  return playlist;
 }
 
-function updatePlaylist(playlist,artistName) {
-      delete playlist[artistName]
+function removeFromPlaylist(playlist, artistName){
+        delete playlist[artistName];
+        return playlist;
 }
