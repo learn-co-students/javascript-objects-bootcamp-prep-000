@@ -11,8 +11,8 @@ function updatePlaylist(playlist,artistName,songTitle){
   return playlist
 };
 
-function removeFromPlaylist(playlist, artistName){
+function removeFromPlaylist(playlist,artistName){
   // this is supposed to say to delete from object(playlist) the key(artistName) to remove the key from the object
-  delete playlist.'artistName';
+  delete playlist[artistName];
   return playlist
 }
