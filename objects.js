@@ -1,6 +1,6 @@
 var playlist = {
-  'nickelback': 'photograph',
-  Simple Plan: 'untitled'
+  'Foo Fighters': 'Everlong',
+  Prince: 'Purple Rain'
 }
 
 function updatePlaylist(playlist, artist, song) {
