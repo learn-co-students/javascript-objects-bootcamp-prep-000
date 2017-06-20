@@ -1,17 +1,12 @@
-var playlist = {
-  Radiohead: "OKComputer",
-  theBeatles: "Something",
-  DrDog: "theTruth"
-};
+var playlist = {artist: "song"};
 
-function updatePlaylist (playlist,artist,song) {
-  playlist ["artist"] = "song"
-  return playlist
+function updatePlaylist (playlist, artist, song) {
+  playlist [artist] = song;
+  return playlist;
 }
-updatePlaylist(playlist,"Beck","Guero")
 
-function removeFromPlaylist (playlist,artist) {
-  delete playlist.artist
-  return playlist
+
+function removeFromPlaylist (playlist, artist) {
+  delete playlist[artist];
+  return playlist;
 }
-removeFromPlaylist("DrDog","theTruth")
