@@ -1,4 +1,4 @@
-var playlist = new Object({tswift: "bad blood", imenzel: "let it go", disney: "hakuna matata"});
+var playlist = {tswift: "bad blood", imenzel: "let it go", disney: "hakuna matata"};
 
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist[artistName] = songTitle;
