@@ -1,8 +1,4 @@
-var playlist = {
-Kanye: 'GoldDigger',
-FrankOcean: 'Nikes',
-Noname: 'Diddybop'
-}
+var playlist = { Kanye: 'GoldDigger'}
 
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist['Phil Ochs'] = "Here's to the State of Mississippi"
@@ -10,6 +6,6 @@ function updatePlaylist(playlist, artistName, songTitle) {
 }
 
 function removeFromPlaylist(playlist, artistName) {
-  delete playlist.['Kanye']
+  delete playlist.Kanye
   return playlist
 }
