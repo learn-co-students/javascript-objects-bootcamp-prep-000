@@ -1,4 +1,4 @@
-playlist.assign({artistName, songTitle})
+Object.assign({artistName, songTitle})
 
 
 function updatePlaylist(playlist, artistName, songTitle) {
