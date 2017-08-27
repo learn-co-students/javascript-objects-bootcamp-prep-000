@@ -1,6 +1,7 @@
 var playlist = {
   Cindy: 'Girls just want to have fun',
-  Regina: 'Fidelity'
+  Regina: 'Fidelity',
+  Kanye: 'Gold Digger'
 }
 
 function updatePlaylist(playlist, artistName, songTitle){
@@ -9,6 +10,7 @@ function updatePlaylist(playlist, artistName, songTitle){
 }
 
 function removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName];
-  return playlist;
+  var newObj = Object.assign({}, playlist);
+  delete newObj[artistName];
+  return newObj;
 }
