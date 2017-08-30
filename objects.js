@@ -1,16 +1,13 @@
 var playlist = {
-  'Lupe Fiasco': 'Out Of My Head',
-   Foals: 'Mountain At My Gates'
-}
+  ODESZA: "Echos"
+};
 
-function updatePlaylist(playlist, artist, song)
-{
-  playlist[artist] = song
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
   return playlist
-}
+};
 
-function removeFromPlaylist(playlist, artist)
-{
-  delete playlist[artist]
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName];
   return playlist
 }
