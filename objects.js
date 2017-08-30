@@ -1,13 +1,12 @@
-var playlist = { "Bob Dylan" : "Forever Young" };
+var playlist = { "Bob Dylan": "Blowin' in the Wind" };
 
-function updatePlaylist(playList, artistName, songTitle) {
-  playlist = playList
-  playlist[artistName] = songTitle;
-  return playlist;
+function updatePlaylist(playlist, artist, song) {
+
+  return Object.assign({}, playlist, { [artist]: song });
+
 }
 
-function removeFromPlaylist(playList, artistName) {
-  playlist = playList
-  delete playlist[artistName]
+function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist];
   return playlist;
 }
