@@ -1,12 +1,23 @@
-var playlist = {
-  LinkinPart: 'Numb'
-  LimpBizkit: 'Nookie'
-  TheProdigy: 'Omen'
+var playList = {
+	linkinPark: 'Numb',
+	limpBizkit: 'Nookie',
+	RHCP: "Wet Sand"
 }
 
-function updatePlaylist(obj,key,value){
-  obj[key] = value
-  return obj
+function updatePlaylist(obj, key, value){
+	obj[key] = value
+	console.log(obj)
+}
+console.log(playList)
+updatePlaylist(playList, 'theProdigy', 'Omen')
+
+function removeFromPlaylist(obj,key){
+	delete obj[key]
 }
 
-updatePlaylist(playlist,'LimpBizkit','Behind Blue Eyes')
+console.log(playList)
+
+removeFromPlaylist(playList,'linkinPark')
+
+
+console.log(playList)
