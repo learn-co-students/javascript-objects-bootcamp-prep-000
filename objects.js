@@ -1,4 +1,4 @@
-var playlist= new Object{'Kesha': 'Tik Tok', 'Denzel Curry': 'Ultimate'}
+var playlist= {Kesha: 'Tik Tok', Denzel Curry: 'Ultimate'}
 function updatePlaylist{
   playlist, artist, songtitle
 }
