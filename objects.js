@@ -1,11 +1,11 @@
 var playlist= {'Kesha': 'Tik Tok', 'Denzel Curry': 'Ultimate'}
 function updatePlaylist{
   playlist, artist, songtitle
-} 
+}
 {
-  return 
+  return
   playlist.assign(
-    {}, playlist, 
+    {}, playlist,
     {
       [artist]:songtitle
     })}
