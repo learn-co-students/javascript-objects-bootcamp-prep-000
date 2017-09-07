@@ -1,5 +1,5 @@
 var playlist= new Object({Kesha: 'Tik Tok', Denzel Curry: 'Ultimate'});
-playlist=objects
+objects=playlist
 function updatePlaylist{
   playlist, artist, songtitle
 }
