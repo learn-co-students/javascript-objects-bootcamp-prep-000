@@ -22,15 +22,11 @@ describe('objects', () => {
   describe('updatePlaylist(playlist, artistName, songTitle)', () => {
     it('adds the `artistName: songTitle` key-value pair to `playlist`', () => {
       function updatePlaylist(playlist, artistName, songTitle) {
-        var playlist ={
-          artistName: "Phil Ochs",
-          songTitle: "Here's to the State of Mississippi",
+        var playlist = {'Phil Ochs': "Here's to the State of Mississippi"  }
 
-        }
-        playlis['artistName'] = "Phil Ochs";
-        playlist['songTitle'] = "Here's to the State of Mississippi";
+          return playlist
       }
-      return updatePlaylist
+
       expect(updatePlaylist({}, 'Phil Ochs', "Here's to the State of Mississippi")).
         to.eql({ 'Phil Ochs': "Here's to the State of Mississippi" })
     })
@@ -39,10 +35,8 @@ describe('objects', () => {
   describe('removeFromPlaylist(playlist, artistName)', () => {
     it('removes `artistName` from `playlist`', () => {
       function removeFromPlaylist(playlist, artistName) {
-        var playlist = {
-         artistName : "Kanye"
-      }
-      delete removeFromPlaylist.artistName
+        var playlist = { artistName : "Kanye"  }
+      delete playlist.artistName
 
     }
       return removeFromPlaylist
