@@ -1,12 +1,15 @@
-var playlist = {artistName: 'songTitle'}
+var playlist = {
+  'dick': 'bag',
+  'some': 'guy'
+}
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle
+
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle;
   return playlist
 }
 
-function removeFromPlaylist(playlist, artistName) {
-  delete playlist.`${artistName}`;
+function removeFromPlaylist(playlist, artist){
+  delete playlist[artist]
   return playlist
 }
-`
