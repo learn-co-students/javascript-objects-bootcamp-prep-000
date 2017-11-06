@@ -1,1 +1,12 @@
-var playlist = new Object (Ke$ha:praying);
+var playlist = {
+  'Ke$ha': 'Praying',
+  'Kanye': 'Gold Digger'
+};
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle
+  return playlist
+}
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName]
+  return playlist
+}
