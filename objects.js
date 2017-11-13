@@ -1,6 +1,6 @@
 var playlist = {
   Seal: 'Loneliness',
-  Rhiana: 'Brieth'
+  Rhiana: 'Breathe'
 };
 
 function updatePlaylist(playlist, artistName, songTitle){
@@ -8,5 +8,6 @@ function updatePlaylist(playlist, artistName, songTitle){
 }
 
 function removeFromPlaylist(playlist, artistName){
- return delete playlist.artistName;
+  delete playlist [artistName];
+  return playlist;
 }
