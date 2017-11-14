@@ -1,5 +1,5 @@
 var playlist = {
-  milkyChance: 'Ego'
+  artistName: 'songTitle'
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
