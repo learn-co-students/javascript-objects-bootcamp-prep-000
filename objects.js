@@ -7,7 +7,7 @@ function updatePlaylist(playlist,key,value) {
   return playlist
 }
 
-function removeFromPlaylist(sample,key) {
-   delete sample.key
-   return sample
+function removeFromPlaylist(test,sampletwo) {
+   delete test[sampletwo]
+   return test
 }
