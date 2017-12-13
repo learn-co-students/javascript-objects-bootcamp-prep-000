@@ -9,7 +9,6 @@ var meals = new Object();
 
   var playlist = {
     artistName: 'Song Title'
-    
   }
   
   function updatePlaylist(playlist, artistName, songTitle) {
@@ -18,6 +17,6 @@ var meals = new Object();
   }
   
   function removeFromPlaylist(playlist, artistName) {
-   delete playlist. artistName;
+   delete playlist [artistName]
     return playlist;
   }
