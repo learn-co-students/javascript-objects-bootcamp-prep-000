@@ -1,11 +1,11 @@
-var playlist = {'Paul Simon': 'American Tune'};
+var playlist = {artistName: 'playlist'}
 
-function updatePlaylist(playlist, artistName, song) {
-  playlist[artistName] = song;
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
   return playlist;
 }
 
 function removeFromPlaylist(playlist, artistName) {
-delete playlist[artistName]
-return playlist;
+  delete playlist[artistName];
+  return playlist;
 }
