@@ -1,6 +1,4 @@
-var playlist = {
-  'Ghengis Khan': 'Capturing All of Asia and Thinking it Will Work'
-};
+var playlist = {};
 
 function addSong(playlist, artist, songTitle) {
   if(playlist[artist] !== undefined) {
@@ -15,15 +13,5 @@ function addSong(playlist, artist, songTitle) {
   } else {
     playlist[artist] = songTitle;
   }
-  return playlist;
-}
-
-function updatePlaylist(playlist, artist, songTitle) {
-  playlist[artist] = songTitle;
-  return playlist;
-}
-
-function removeFromPlaylist(playlist, artist) {
-  delete playlist[artist];
-  return playlist;
+  return playlist[artist];
 }
