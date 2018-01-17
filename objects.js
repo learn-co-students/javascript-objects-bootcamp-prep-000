@@ -1,11 +1,12 @@
 var playlist = {
-  name: title;
+  wean: "Ocean man"
 }
+
 function updatePlaylist(playlist, name, title){
-  Object.assign ({}, playlist, {[name]: title})
-  return playlist;
+  return Object.assign({}, playlist, {[name]: title})
 }
 
 function removeFromPlaylist(playlist, name){
-  delete playlist.name;
+  delete playlist[name];
+  return playlist
 }
