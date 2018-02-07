@@ -24,8 +24,10 @@ describe('objects', () => {
 
   describe('removeFromPlaylist(playlist, artistName)', () => {
     it('removes `artistName` from `playlist`', () => {
-      expect(removeFromPlaylist({ Kanye: "Gold Digger" }, "Kanye")).
-        to.eql({})
+      var returnValueOfFunction =
+         removeFromPlaylist({ Kanye: "Gold Digger" }, "Kanye")
+
+      expect(returnValueOfFunction).to.eql({})
     })
   })
 })
