@@ -1,1 +1,10 @@
-var playlist = { u2: "With or Without you", Sting: "Shape of My Heart"};
+var playlist = { u2: 'One'};
+
+function updatePlaylist(playlist, artistName, songTitle) {
+  return Object.assign({},playlist, {[artistName]: songTitle});
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName];
+  return playlist;
+}
