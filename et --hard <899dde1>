@@ -1,0 +1,34 @@
+[33md75a839[m Improve readability of first paragraph in intro [31m(thomastuts, 1 year, 7 months ago)[m
+[33mddb3a30[m Fix formatting [31m(thomastuts, 1 year, 7 months ago)[m
+[33m4224566[m Merge pull request #4 from abillig/abillig-1468989051 [31m(AnnJohn, 1 year, 7 months ago)[m
+[33mbd335a4[m Updated README.md [31m(abillig, 1 year, 7 months ago)[m
+[33m8d9d1dc[m Merge pull request #3 from learn-co-curriculum/fix-typos [31m(Avidor Turkewitz, 1 year, 8 months ago)[m
+[33m8214d29[m Move more returns after their calls [31m(Avidor Turkewitz, 1 year, 8 months ago)[m
+[33md1dbad5[m Fix typo and move return values after calls [31m(Avidor Turkewitz, 1 year, 8 months ago)[m
+[33m8fece61[m Merge pull request #1 from aturkewi/aturkewi-1468172298 [31m(Avidor Turkewitz, 1 year, 8 months ago)[m
+[33m00e1b67[m Fix typo [31m(Avidor Turkewitz, 1 year, 8 months ago)[m
+[33m0f82098[m Add another example [31m(Charles Pletcher, 1 year, 8 months ago)[m
+[33med7eae9[m Open with a metaphor [31m(Charles Pletcher, 1 year, 8 months ago)[m
+[33m8db6a85[m Update README to match tests [31m(Charles Pletcher, 1 year, 10 months ago)[m
+[33mafc30f7[m Demonstrate the use of Object.assign [31m(Charles Pletcher, 1 year, 10 months ago)[m
+[33mfe4d969[m Make sure students have defined some key-value pairs in playlist [31m(Charles Pletcher, 1 year, 10 months ago)[m
+[33mb39db09[m Initial commit with lab [31m(Charles Pletcher, 1 year, 10 months ago)[m
+[33m899dde1[m Merge pull request #6 from zachnewburgh/zachnewburgh-1459347977 [31m(AnnJohn, 1 year, 11 months ago)[m
+[33m1f76a5f[m TYPO: "it's" to "its" [31m(Zach Newburgh, 1 year, 11 months ago)[m
+[33m5378d11[m Merge pull request #5 from tuckerbohman5/tuckerbohman5-1458749004 [31m(AnnJohn, 1 year, 11 months ago)[m
+[33m29ae155[m Unline(should be unlike) Ruby, JavaScript does not have a handy .empty? convenience method. But, you can check to see if your object is empty by using Object.keys(yourObject) which returns an array of all the keys in your object. [31m(Tucker Bohman, 1 year, 11 months ago)[m
+[33m3ba8d75[m Merge pull request #3 from pajamaw/pajamaw-1458314263 [31m(AnnJohn, 1 year, 11 months ago)[m
+[33m218f6ca[m readme variable order now matches test [31m(PJ Wickwire, 1 year, 11 months ago)[m
+[33me8560cc[m merge [31m(vicfriedman, 2 years, 1 month ago)[m
+[33m5ecbab9[m optimize learn link [processing skip] [31m(Adam Jonas, 2 years, 1 month ago)[m
+[33mfa2aa1e[m updates [31m(vicfriedman, 2 years, 1 month ago)[m
+[33mf72353e[m updated test [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m86e7874[m readme [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m26339ca[m empty object [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m6816aec[m iterate hash [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m2e3cc22[m readme [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m97cfb13[m update objectives [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m8968ecb[m codealong [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m9afcd61[m learn [31m(vicfriedman, 2 years, 2 months ago)[m
+[33meb01af7[m lesson [31m(vicfriedman, 2 years, 2 months ago)[m
+[33m9dc7217[m objectives [31m(vicfriedman, 2 years, 2 months ago)[m
