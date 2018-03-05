@@ -8,7 +8,7 @@
 + Delete a key-value pair from an object
 + Iterate over key-value pairs in an object
 
-## Intro
+## Intro  
 
 When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of
 words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can just
