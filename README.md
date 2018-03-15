@@ -112,7 +112,7 @@ using the `firstMeal` variable (which is equal to the string `'breakfast'`).  Wh
 meals.firstMeal //undefined
 ```
 
-When we use dot notation the key is always taken as the literal string provided. We _must_ use bracket notation if we want to access values with a variable.
+When we use dot notation the key is always taken as the literal string provided. We _must_ use bracket notation if we want to access (or delete) values that belong to a variable key.
 
 
 ## Adding to an Object
