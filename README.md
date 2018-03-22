@@ -106,7 +106,14 @@ Note that when we use dot syntax, we _do not_ wrap the key in quotes, and the ke
 meals[firstMeal] // 'oatmeal'
 ```
 
-using the `firstMeal` variable (which is equal to the string `'breakfast'`).
+using the `firstMeal` variable (which is equal to the string `'breakfast'`).  What if we tried using dot notation with our `firstMeal` variable?
+
+```javascript
+meals.firstMeal //undefined
+```
+
+When we use dot notation the key is always taken as the literal string provided. We _must_ use bracket notation if we want to access (or delete) values that belong to a variable key.
+
 
 ## Adding to an Object
 
