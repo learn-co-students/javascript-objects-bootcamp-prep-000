@@ -10,7 +10,7 @@ In this lesson, we'll introduce, define, and work with objects.
 + Add a key-value pair to an object
 + Delete a key-value pair from an object
 + Iterate over key-value pairs in an object
-
+s
 ## Introduction 
 
 When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can just look it up in the dictionary and get all its information.
@@ -231,7 +231,7 @@ function updateObjectWithObject(targetObject, updatesObject) {
 }
 ```
 
-## Deleting a Key-Value Pair
+## Del  eting a Key-Value Pair
 
 Let's say it's only 5 p.m. and we've changed our mind about dinner, so we want to delete the dinner key-value pair:
 
