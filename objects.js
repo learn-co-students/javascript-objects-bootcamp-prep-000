@@ -1,11 +1,11 @@
-const playlist = { SYML : "Where's My Love"};
+var playlist = { SYML: "Where's My Love"};
 
 function updatePlaylist( obj, key, value ) {
-  obj.key = value;
+  obj[key] = value;
   return obj;
 }
 
 function removeFromPlaylist( obj, key ) {
-  delete obj.key;
+  delete obj[key];
   return obj
 }
