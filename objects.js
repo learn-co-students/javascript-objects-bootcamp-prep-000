@@ -1,4 +1,6 @@
-var playlist = { artist: 'song' };
+var playlist = { artist: 'song' }; 
+// keep abstract rather than hard coding when assigning key value pairs.
+// also spaces between { and keyName and again space after valueName and before }
 
 
 
