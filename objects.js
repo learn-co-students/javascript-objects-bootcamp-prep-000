@@ -12,6 +12,7 @@ function removeFromPlaylist (playlist, artistName) {
   delete playlist[artistName];
   return playlist;
 }
+// Looks like the tests forgot to check whether updatePlaylist and removeFromPlaylist return the updated playlists.
 /* A note on terminology regarding the following line of code:
 var meals = { breakfast: "toast and eggs" };
 meals is the object
