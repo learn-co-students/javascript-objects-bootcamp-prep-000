@@ -1,16 +1,16 @@
 var playlist = {'Elvis Presley' : "Blue Christmas", Aerosmith: "Dream On", tenthAvenueNorth: "You Are More"};
 
-function updatePlaylist (theirPlaylist, nameOfArtist, titleOfSong) {
-  return Object.assign(theirPlaylist, {[nameOfArtist]: titleOfSong});
+function updatePlaylist (playlist, nameOfArtist, titleOfSong) {
+  return Object.assign(playlist, {[nameOfArtist]: titleOfSong});
   /* This works, too:
-  theirPlaylist[nameOfArtist] = titleOfSong;
-  return theirPlaylist; */
+  playlist[nameOfArtist] = titleOfSong;
+  return playlist; */
   // Remember to enclose any variable keys in brackets!!!
 }
 
-function removeFromPlaylist (theirPlaylist, artistName) {
-  delete theirPlaylist[artistName];
-  return theirPlaylist;
+function removeFromPlaylist (playlist, artistName) {
+  delete playlist[artistName];
+  return playlist;
 }
 /* A note on terminology regarding the following line of code:
 var meals = { breakfast: "toast and eggs" };
