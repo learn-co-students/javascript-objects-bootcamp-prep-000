@@ -23,4 +23,3 @@ function removeFromPlaylist(playlist, artistName) {
   var updatedPlaylist = delete playlist[artistName];
   return updatedPlaylist;
 }
-
