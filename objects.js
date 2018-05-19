@@ -1,6 +1,6 @@
 var playlist = {
-  artistName: 'Barry Manilow',
-  songTitle: "Can't Live Without You"
+  artistName: 
+  songTitle
 };
 //console.log(playlist);
 
