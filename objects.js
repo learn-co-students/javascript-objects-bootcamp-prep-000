@@ -2,11 +2,9 @@ var playlist = { artistName: 'songTitle' };
 //console.log(playlist);
 
 function updatePlayList(playlist, artistName, songTitle) {
-  //return Object.assign(playlist, {[artistName]: songTitle})
-   return Object.assign(playlist, {[artistName]: songTitle})
-    //playlist.['artistName']: songTitle;
-    //return playlist;
+   return Object.assign(playlist, {[artistName]: songTitle}
 }
+    
 //console.log(updatePlayList(playlist, 'Bonzo', 'Can-Can'))
 
 
@@ -15,6 +13,4 @@ function removeFromPlaylist(artistName) {
   return playlist;
 }
 
-console.log(playlist);
-
-
+//console.log(playlist);
