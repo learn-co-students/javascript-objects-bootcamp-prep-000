@@ -1,10 +1,20 @@
-var playlist = {
-  artistnames: "korchach",
-  songtitles: "tsbktey",
-};
+
+ var playlist = {artistName: "songTitle"}
+
  
- function updatePlaylist(obj,var1,var2) 
+ function updatePlaylist(obj,artistname,songtitle) 
  {
-   playlist.artistnames=
+   playlist[artistname]=songtitle
+   return playlist
    
  }
+ 
+ removeFromPlaylist
+ 
+ function removeFromPlaylist(obj,artistname) 
+ {
+   delete playlist[artistname]
+   return playlist
+   
+ }
+ 
