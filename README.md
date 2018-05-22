@@ -1,4 +1,3 @@
-# JavaScript Objects
 
 ## Overview
 
