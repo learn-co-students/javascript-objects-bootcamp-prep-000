@@ -1,7 +1,11 @@
-var playlist = {janelleMonae: 'I got the juice', kaliUchis: 'Ridin Round', todrickHall: 'T.H.U.G.'};
+var playlist = {janelleMonae: 'I got the juice'};
 
-function updatePlaylist(obj, key, value){
-  Object.assign({janelleMonae: 'I got the juice', kaliUchis: 'Ridin Round', todrickHall: 'T.H.U.G.', jaro:'Annabelle'});
+function updatePlaylist(playlist, artist, song){
+  playlist[artist] = song;
   return playlist;
 }
 
+function removeFromPlaylist(playlist, artist){
+  delete playlist[artist];
+  return playlist
+}
