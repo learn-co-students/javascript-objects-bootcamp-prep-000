@@ -3,7 +3,7 @@ var playlist = {
   MyBloodyValentine: 'Sometimes'
   }
 
-function updatePlatlist(playlist, a, b) {
+function updatePlaylist(playlist, a, b) {
   playlist[a] = b;
   return playlist
 }
