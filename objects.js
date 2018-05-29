@@ -1,7 +1,10 @@
-var playlist = {CarrieUnderwood: ' Two Black Cadillacs'}
+var playlist = {
+  Slowdive: 'Allison', 
+  MyBloodyValentine: 'Sometimes'
+  }
 
 function updatePlatlist(playlist, a, b) {
-  playlist[a] = 'b';
+  playlist[a] = b;
   return playlist
 }
 
