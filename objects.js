@@ -1,13 +1,20 @@
-var playlist = new Object({Slowdive: 'Alison', MyBloodyValentine: 'Sometimes'});
+var playlist = {
+'Foo Fighters': 'Everlong',
+Prince: 'Purple Rain'
+}
 
-function updatePlaylist (playlist, PhilOchs, songtitle)
-{
-  playlist[PhilOchs] = "Here's to the State of Mississippi"
+function updatePlaylist(playlist, artist, song) {
+  // Remember, because one of this function's arguments
+  // is `playlist`, the `playlist` _inside_ the function
+  // is not the same as the top-level `playlist` outside
+  // the function
+  playlist[artist] = song
+
   return playlist
 }
 
-function removeFromPlaylist (playlist, artistName)
-{
-  delete playlist.Slowdive;
+function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist]
+
   return playlist
 }
