@@ -1,27 +1,14 @@
-<<<<<<< HEAD
-var playlist = {ACDC: "School of rock"};
-
-function updatePlaylist (playlist, artistName, songTitle) {
- 
-  return playlist[artistName] = songTitle
-  
-};
-  
- function removeFromPlaylist (playlist, artistName) {
-    delete playlist [artistName]
- }
-=======
 var playlist = {
-artistName:"songTitle"
-  
+  Beatles: "Here Comes the Sun",
+  DaftPunk: "Technologic",
+  Guster: "Demons"
+};
+
+function updatePlaylist(playlist,artist,song) {
+  playlist[artist] = song;
 }
 
-function updatePlaylist(playlist, artistName, songTitle){
-  playlist[artistName]=songTitle;
-  return playlist
-}
-
-function removeFromPlaylist(playlist,artistName){
+function removeFromPlaylist(playlist,artistName) {
  delete playlist[artistName];
-return playlist;
->>>>>>> b18198f539d9ccda38175760bea9d4275c2a5f97
+ return playlist;
+}
