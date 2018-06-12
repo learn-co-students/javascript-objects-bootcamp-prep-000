@@ -1,5 +1,5 @@
 let playlist = {
-  'Styx': "Light Up"
+  'Bowie': "Let's Dance"
 }
 
 function updatePlaylist(playlist, artistName, songTitle) {
