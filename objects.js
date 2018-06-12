@@ -1,5 +1,5 @@
 var meals = {};
-var meals = new Object();
+var meals = new Object({});
 
 var playlist = { savagegarden: "Truly Madly Deeply" };
 
