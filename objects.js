@@ -1,5 +1,5 @@
-var playlist = { ['Big Sean']: 'Feelings'
-  : 'songTitle'
+var playlist = {[
+  artistName]: 'songTitle'
 };
 function updatePlaylist (playlist, artistName, songTitle) {
  Object.assign({}, playlist, {[artistName]:songTitle})
