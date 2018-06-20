@@ -1,3 +1,10 @@
+var meals = { breakfast: "oatmeal"};
+
+var meals = {}
+
+
+
+
 var playlist = {
   'Foo Fighters': 'Everlong',
   Prince: 'Purple Rain'
