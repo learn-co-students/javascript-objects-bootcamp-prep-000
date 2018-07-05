@@ -1,9 +1,11 @@
-var playlist = {Sinatra: "Always"};
-
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
+var playlist = {Sinatra: ["Always","Summer Wind"],
 };
 
-function removeFromPlaylist(playlist, artistName) {
-  delete playlist[artistName];
+function updatePlaylist(playlist, artist, tracktitle){
+  playlist[artist] = tracktitle
+  return playlist
+}
+function removeFromPlaylist(playlist,artist){
+  delete playlist[artist]
+  return playlist
 }
