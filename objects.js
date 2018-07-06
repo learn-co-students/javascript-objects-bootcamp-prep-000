@@ -1,11 +1,14 @@
-var playlist = {};
+var playlist = {
+  'Foo Fighters' : 'Everlong',
+  'Prince' : 'Purple Rain',
+};
 
 function updatePlayList (list, artist, title) {
-  Object.assign({}, list, { artist: [title]})
-  return object;
+  list[artist] = title;
+  return list;
 }
 
-function removeFromPlaylist(object, name) {
-  Object.assign({}, list, { artist: [title]})
-  return object;
+function removeFromPlaylist(list, artist) {
+  delete list[artist];
+    return list;
 }
