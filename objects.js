@@ -1,7 +1,8 @@
-var playlist = {artist : "song"};
+var playlist = {'Maluma' : "Corazon"};
 
 function updatePlaylist (playlist,artist,song) {
-  return Object.assign({}, playlist, {[artist]:song})
+  playlist[artist] = song
+  return playlist
 }
 
 function removeFromPlaylist(playlist,artist) {
