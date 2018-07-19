@@ -1,13 +1,12 @@
-var meals = {breakfast:"oatmeal"};
-var meals = new Object({ breakfast: 'oatmeal'});
+var playlist = {artistName:songTitle};
 
+function updatePlaylist(playlist, artist, songTitle){
+  playlist[artist] = song;
+  return playlist;
+}
 
-meals[firstMeal];
+function removeFromPlaylist(playlist,artistName){
+    delete playlist[artist];
 
-meals.snack = 'yogurt';
-
-var playlist = {};
-
-function updatePlaylist(playlist,artistName, songTitle){
-
+    return playlist;
 }
