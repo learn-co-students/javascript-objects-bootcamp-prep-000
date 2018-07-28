@@ -1,5 +1,5 @@
 var playlist = {
-  artistName: songTitle
+  'Michael Jackson': 'Man in the Mirror'
 }
   
   function updatePlaylist(obj,key,value) {
@@ -8,6 +8,6 @@ var playlist = {
   }
   
   function removeFromPlaylist(obj, artistName) {
-    delete obj.artistName
+    delete obj[artistName]
     return obj
   }
