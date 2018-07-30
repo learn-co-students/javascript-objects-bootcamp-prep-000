@@ -1,9 +1,11 @@
 var playlist = {name: song};
 
 function updatePlaylist(playlist, name, song) {
-  return (playlist.name = song);
+  playlist.name = song;
+  return playlist
 }
 
 function removeFromPlaylist(playlist, name) {
-  return (delete playlist.name);
+  delete playlist.name;
+  return playlist
 }
