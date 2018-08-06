@@ -1,14 +1,13 @@
 var playlist = new Object({Drake: 'In My Feelings'})
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  playlist.6ix9ine = 'Fefe'
+  playlist['artistName'] = songTitle
+ 
   return playlist
 }
 
-
-
-
 function removeFromPlaylist(playlist, artistName) {
-  delete playlist.Drake
+  delete playlist.artistName
+ 
   return playlist
 }
