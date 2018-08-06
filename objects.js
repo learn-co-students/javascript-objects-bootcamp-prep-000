@@ -1,15 +1,12 @@
-var playlist = {
-  'Foo Fighters': 'Everlong',
-  Prince: 'Purple Rain'
-}
+var playlist = {artistName: 'songName'}
 
-function updatePlaylist(playlist, artist, song) {
-   playlist[artist] = song
+function updatePlaylist(playlist, artistName, songName) {
+   playlist[artistName] = songName
    return playlist
 }
 
-function removeFromPlaylist(playlist, artist) {
-  delete playlist[artist]
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
    return playlist
 }
 
