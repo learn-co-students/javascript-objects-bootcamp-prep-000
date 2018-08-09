@@ -66,3 +66,21 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
  
   return obj
 }
+const recipe = { eggs: 3 }
+ 
+destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
+// returns { eggs: 3, flour: '3 cups' }
+ 
+// but also:
+ 
+recipe // { eggs: 3, flour: '3 cups' }
+// rewrite in a non-destructive way
+Object.assign({}, { foo: 'bar' })
+// { foo: 'bar' }
+ 
+Object.assign({ eggs: 3 }, { flour: '1 cup' })
+// { eggs: 3, flour: '1 cup' }
+
+Object.assign({ eggs: 3 }, { chocolate: '1 cup', flour: '2 cups' }, { flour: '1/2 cup' })
+// { eggs: 3, chocolate: '1 cup', flour: '1/2 cup' }
+
