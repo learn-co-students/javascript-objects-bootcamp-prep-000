@@ -20,15 +20,21 @@ var meals = {
 console.log(meals) // NO DISPLAY
  */
  
- // object key words
- const firstMeal = 'breakfast'
- var meals = { firstMeal: 'oatmeal' }
- console.log(meals) // NO DISPLAY
- 
- // 
 // duplicate values are OK
 var meals = {
   breakfast: 'avocado',
   lunch: 'avocado',
   dinner: 'avocado'
 }
+ 
+// object key words
+const firstMeal = 'breakfast'
+var meals = { firstMeal: 'oatmeal' }
+console.log(meals) // NO DISPLAY
+ 
+// variable as object key
+meals = { [firstMeal]: 'oatmeal' }
+
+// 
+
+
