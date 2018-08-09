@@ -1,4 +1,4 @@
-// My objects.JS
+// My objects.js
 
 /*
 Instructions
