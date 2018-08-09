@@ -35,6 +35,8 @@ console.log(meals) // NO DISPLAY
 // variable as object key
 meals = { [firstMeal]: 'oatmeal' }
 meals.breakfast // 'oatmeal'
+// or
+meals['breakfast'] // 'oatmeal'
 // 
 
 
