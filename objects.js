@@ -44,7 +44,11 @@ meals.firstMeal //undefined
 
 // adding to an object
 meals.snack = 'yogurt';
+meals.snack // 'yogurt'
+meals['snack'] // 'yogurt'
+meals.lunch // 'burrito'
 
+// 
 
 
 
