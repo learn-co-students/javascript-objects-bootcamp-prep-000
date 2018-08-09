@@ -37,6 +37,8 @@ meals = { [firstMeal]: 'oatmeal' }
 meals.breakfast // 'oatmeal'
 // or
 meals['breakfast'] // 'oatmeal'
-// 
+// or
+meals[firstMeal] // 'oatmeal'
+
 
 
