@@ -42,6 +42,10 @@ meals[firstMeal] // 'oatmeal'
 // but
 meals.firstMeal //undefined
 
+// adding to an object
+
+
+
 
 
 
