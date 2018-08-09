@@ -49,12 +49,12 @@ var playlist = new Object({breakfast:cereal})
 //console.log(playlist)
 
 
-function updatePlaylist(playlist, artistName, songTitle) {
+function updatePlaylist(obj, artistName, songTitle) {
   // newPlaylist = Object.assign({}, playlist, {[artist]: songTitle})
   // return newPlaylist;
 //  Object.assign({}, playlist, {[artistName]: songTitle})
-  playlist[artistName] = "songTitle";
-  return playlist
+  obj[artistName] = "songTitle";
+  return obj
 }
 
 console.log(typeof playlist)
