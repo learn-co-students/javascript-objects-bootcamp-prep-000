@@ -50,9 +50,14 @@ meals.lunch // 'burrito'
 meals['second breakfast'] = 'bagel'
 
 // 
+var sweetMeal = 'dessert'
+ 
+meals[sweetMeal] = 'cake';
+ 
+meals.dessert // 'cake'
+meals[sweetMeal] // 'cake'
 
+// 
+meals.breakfast = 'cereal'
 
-
-
-
-
+// 
