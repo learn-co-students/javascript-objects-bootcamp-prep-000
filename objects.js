@@ -16,4 +16,11 @@ var meals = {
   breakfast: 'eggs',
   breakfast: 'bacon'
 }
-console.log(meals)
+console.log(meals) // NO DISPLAY
+
+// duplicate values are OK
+var meals = {
+  breakfast: 'avocado',
+  lunch: 'avocado',
+  dinner: 'avocado'
+}
