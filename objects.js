@@ -39,6 +39,9 @@ meals.breakfast // 'oatmeal'
 meals['breakfast'] // 'oatmeal'
 // or
 meals[firstMeal] // 'oatmeal'
+// but
+meals.firstMeal //undefined
+
 
 
 
