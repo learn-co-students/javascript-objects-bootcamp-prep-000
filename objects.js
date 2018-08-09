@@ -47,6 +47,7 @@ meals.snack = 'yogurt';
 meals.snack // 'yogurt'
 meals['snack'] // 'yogurt'
 meals.lunch // 'burrito'
+meals['second breakfast'] = 'bagel'
 
 // 
 
