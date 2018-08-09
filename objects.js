@@ -17,7 +17,7 @@ Create a function removeFromPlaylist that accepts two arguments (the playlist ob
    artistName3: "songTitle3",
  }
  
- function updatePlaylist() {
+ function updatePlaylist(playlist, artistName, songTitle) {
    return "updated playlist"
  }
  
