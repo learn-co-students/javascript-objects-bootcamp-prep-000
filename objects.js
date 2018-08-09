@@ -12,12 +12,14 @@ var meals = { breakfast: "oatmeal" };
 var meals = new newMeal({ breakfast: 'oatmeal' })
 
 // duplicate keys are caught as a Warning by the editor!
+/*
 var meals = {
   breakfast: 'eggs',
   breakfast: 'bacon'
 }
 console.log(meals) // NO DISPLAY
-
+ */
+ 
 // duplicate values are OK
 var meals = {
   breakfast: 'avocado',
