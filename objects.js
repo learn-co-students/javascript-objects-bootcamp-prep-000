@@ -16,3 +16,11 @@ Create a function removeFromPlaylist that accepts two arguments (the playlist ob
    artistName2: "songTitle2",
    artistName3: "songTitle3",
  }
+ 
+ function updatePlaylist() {
+   return "updated playlist"
+ }
+ 
+ function removeFromPlaylist() {
+   return "updated playlist"
+ }
