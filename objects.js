@@ -16,7 +16,7 @@ Create a function removeFromPlaylist that accepts two arguments (the playlist ob
  var artistName2 = "Phil Ochs"
  var artistName3 = "Slowdive"
  var playlist = {
-   "My Bloody Valentine": "songTitle1",
+   [artistName1]: "songTitle1",
    "Phil Ochs": "songTitle2",
    "Slowdive": "songTitle3",
  }
