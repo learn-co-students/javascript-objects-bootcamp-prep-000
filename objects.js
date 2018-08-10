@@ -12,9 +12,9 @@ Create a function removeFromPlaylist that accepts two arguments (the playlist ob
  */
  
  var playlist = {
-   artistName1: "songTitle1",
-   artistName2: "songTitle2",
-   artistName3: "songTitle3",
+   "My Bloody Valentine": "songTitle1",
+   "Phil Ochs": "songTitle2",
+   "Slowdive": "songTitle3",
  }
  
  function updatePlaylist(playlist, artistName, songTitle) {
