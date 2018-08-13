@@ -1,9 +1,1 @@
-tags:
-  - objects
-  - hashes
-  - javascript
-  - js
-languages:
-  - javascript
-resources: 
-  - 0
+var meals = new Object();
