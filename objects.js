@@ -1,9 +1,10 @@
 var playlist = { 
-  'artistName': 'songTitle',
+  'Lynyrd Skynyrd': 'Simple Man'
 };
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  return Object.assign({}, playlist, { [artistName]: songTitle }) 
+  playlist[artistName] = songTitle;
+  return playlist;
 }
 
 function removeFromPlaylist(playlist, artistName) {
