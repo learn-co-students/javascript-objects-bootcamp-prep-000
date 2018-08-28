@@ -1,5 +1,5 @@
 var playlist = {
-  matt: "bad song"
+  "A Fine Frenzy": "Electric Twist"
 }
 
 function updatePlaylist(playlist, artistName, songTitle){
