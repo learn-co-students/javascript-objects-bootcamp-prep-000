@@ -1,6 +1,6 @@
 var playlist = {}
 
-function updatePlaylist(object, string, title){
-  object.string =[ 'title'];
+function updatePlaylist(playlist, artist, song){
+  playlist[artist] =[song];
   playlist;
 }
