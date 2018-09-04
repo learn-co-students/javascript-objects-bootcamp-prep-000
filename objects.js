@@ -1,12 +1,12 @@
+var playlist = new Object({name: "songs"})
 
-var playlist = new Object({artist: 'song, title'});
+function updatePlaylist(object, name, song) {
+  object[name] = song;
+  return object
+} 
 
- function updatePlaylist(playlist, artist, song) {
-  playlist[artist] = song;
-  return playlist;
+function removeFromPlaylist(playlist, artistName) {
+  delete playlist[artistName]
+  return playlist
 }
 
- function removeFromPlaylist(playlist, artistName) {
-  delete playlist[artistName];
-  return playlist;
- }
