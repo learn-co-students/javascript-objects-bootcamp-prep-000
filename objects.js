@@ -2,7 +2,6 @@ var playlist = {"michael jackson": "smooth criminal"}
 
 function updatePlaylist(playlist, artist, title) {
   playlist[artist] = title
-  return playlist
 }
 
 function removeFromPlaylist(playlist, artist) {
