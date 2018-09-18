@@ -1,25 +1,27 @@
-var meals = {};
-var meals = new Object();
-
-var meals  = {breakfast: "oatmeal"};
-
-// or, equivalently
-
-var meals = new Object({ breakfast: 'oatmeal'})
-
-// We can initialize the following object
-
-var meals = {
-  breakfast: 'eggs',
-  breakfast: 'bacon'
+var playlist = { 
+  artist: 'song'
 }
 
-console.log(meals)
 
-var meals = {
-  breakfast: 'avocado',
-  lunch: 'avocado',
-  dinner: 'avocado'
+function updatePlaylist(obj, key, value) {
+  obj[key] = value
+  
+  return obj
 }
 
-meals.snack
+updatePlaylist(playlist, 'Phil Ochs', 'Here\'s to the State of Mississippi')
+
+updatePlaylist(playlist, 'Slowdive', 'Alison')
+
+console.log(playlist)
+
+
+function removeFromPlaylist(obj, key) {
+  
+  delete playlist.Slowdive
+
+  return obj
+  
+}
+
+console.log(playlist)
