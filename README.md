@@ -9,7 +9,6 @@ In this lesson, we'll introduce, define, and work with objects.
 + Access a value from an object
 + Add a key-value pair to an object
 + Delete a key-value pair from an object
-+ Iterate over key-value pairs in an object
 
 ## Introduction 
 
