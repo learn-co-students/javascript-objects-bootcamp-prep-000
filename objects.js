@@ -11,6 +11,6 @@ function updatePlaylist({}, obj, string) {
 }
 
 function removeFromPlaylist({}, string) {
-  delete playlist['Slowdive']
+  delete playlist[string]
   return Object.assign({}, string)
 }
