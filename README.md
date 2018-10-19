@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lesson, we'll introduce, define, and work with objects. 
+In this lesson, we'll introduce, define, and work with objects.
 
 ## Objectives
 + Create an object in JS
@@ -10,7 +10,7 @@ In this lesson, we'll introduce, define, and work with objects.
 + Add a key-value pair to an object
 + Delete a key-value pair from an object
 
-## Introduction 
+## Introduction
 
 When we run across a word that we don't know, we often consult a dictionary. A dictionary is, at its core, a list of words; below each word is a definition or set of definitions. If we know the word that we're looking for, we can just look it up in the dictionary and get all its information.
 
@@ -205,15 +205,15 @@ The power of `Object.assign` allows us to rewrite the above update function in a
 
 ``` javascript
 function updateObjectWithKeyAndValue(obj, key, value) {
- 
+
   return Object.assign({}, obj, { [key]: value })
 }
   // it's important that we merge everything into
-  // a new object such as the empty {}. 
-	// Otherwise, the object obj will be modified. 
+  // a new object such as the empty {}.
+	// Otherwise, the object obj will be modified.
 	// Test what happens if this line was written as:
 	// return Object.assign(obj, { [key]: value })
-	
+
 const recipe = { eggs: 3 }
 
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
@@ -302,3 +302,4 @@ meals
 4. Create a function `removeFromPlaylist` that accepts two arguments (the playlist object and the artist name). The body of the function should delete the key-value pair from the playlist and return the updated playlist.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-objects'>Javascript Objects</a> on Learn.co and start learning to code for free.</p>
+test
