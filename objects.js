@@ -1,7 +1,8 @@
 var meals = {
-  breakfast: 'oatmeal',
-  lunch: 'salad',
-  dinner: "green smoothie"
+  breakfast: "oatmeal",
+  lunch: "turkey sandwich",
+  dinner: "steak and potatoes"
 };
-meals.snack = "gummy bears";
-console.log(meals.snack);
+
+Object.assign(meals, { breakfast: ['oatmeal', 'apple'] });
+console.log(meals);
