@@ -3,4 +3,5 @@ var meals = {
   lunch: 'salad',
   dinner: "green smoothie"
 };
-console.log(meals.lunch);
+meals.snack = "gummy bears";
+console.log(meals.snack);
