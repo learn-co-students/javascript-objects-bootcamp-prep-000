@@ -1,8 +1,12 @@
-var meals = {
-  breakfast: "oatmeal",
-  lunch: "turkey sandwich",
-  dinner: "steak and potatoes"
+var playlist = {
+  queen: "bohemian rhapsody",
+  aliceMerton: "i have no roots",
+  misterFelipe: "fuera perro"
 };
-
-Object.assign(meals, { breakfast: ['oatmeal', 'apple'] });
-console.log(meals);
+function updatePlaylist (playlist, artist, song){
+ return object.assign (playlist, {michaelJackson: "Thriller"});
+};
+//const newSong = {michaelJackson: "Thriller"};
+// updatePlaylist(newSong, "JayZ", "No Church In the Wild");
+console.log(playlist);
+console.log(updatePlaylist);
