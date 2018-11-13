@@ -6,7 +6,10 @@ var playlist = {
 function updatePlaylist (playlist, artist, song){
  return object.assign (playlist, {michaelJackson: "Thriller"});
 };
-//const newSong = {michaelJackson: "Thriller"};
-// updatePlaylist(newSong, "JayZ", "No Church In the Wild");
+function removeFromPlaylist (playlist, artist, song){
+  return delete playlist.misterFelipe;
+}
 console.log(playlist);
 console.log(updatePlaylist);
+console.log (removeFromPlaylist); 
+console.log(playlist); 
