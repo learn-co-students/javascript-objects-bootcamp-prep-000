@@ -1,18 +1,18 @@
 var playlist = {
-  "Bob Marley": "One Love"
+  ['Bob Marley']: 'One Love'
 };
 
-function updatePlaylist(playlist, artist, song) {
-  playlist[artist] = song;
-  return playlist;
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
 }
 
-function removeFromPlaylist(playlist, artist, song) {
-  return delete playlist[artist];
+function removeFromPlaylist(playlist, artistName) {
+return delete playlist[artistName];
 }
+
 
 /*
-  describe('removeFromPlaylist(playlist, artistName)', () => {
+ describe('removeFromPlaylist(playlist, artistName)', () => {
     it('removes `artistName` from `playlist`', () => {
       removeFromPlaylist(playlist, 'Slowdive')
 
