@@ -1,14 +1,14 @@
 var playlist = {
-  ['Bob Marley']: 'One Love'
+  ["Bob Dylan"]: "Like a Rolling Stone"
 };
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
+function updatePlaylist(playlist, artist, song) {
+  playlist[artist] = song;
   return playlist;
 }
 
-function removeFromPlaylist(playlist, artistName) {
-return delete playlist[artistName];
+function removeFromPlaylist(playlist, artist) {
+  return delete playlist[artist]; 
 }
 
 
