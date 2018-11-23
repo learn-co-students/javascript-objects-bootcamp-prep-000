@@ -1,4 +1,4 @@
-var playlist = { 'Muse': 'Absolution', 'Coheed and Cambria': 'Welcome Home' }
+var playlist = { 'Muse': 'Absolution' }
 function updatePlaylist(playlist, artistName, songTitle){
   playlist[artistName] = songTitle
   return playlist
