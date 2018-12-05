@@ -11,6 +11,7 @@ function removeFromPlaylist(playlist, artistName) {
   return delete playlist[artistName];
 }
 
+
 /*
   it('defines an object called `playlist` containing at least one artist-song pair', () => {
     expect(typeof playlist).to.equal('object')
