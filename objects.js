@@ -1,11 +1,11 @@
 var playlist = {
-  'Bob Marley': 'One Love'
+  "Bob Marley": "One Love"
 };
 
-
-
-
-
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
+  return playlist;
+}
 
 /*
   it('defines an object called `playlist` containing at least one artist-song pair', () => {
