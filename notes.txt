@@ -1,0 +1,65 @@
+Creating objects
+You can create an object in two different ways, with the literal syntax and with the Object constructor. A constructor does just what its name implies: it constructs objects (in this case, Object objects). Be sure to follow along in your console.
+
+Literal Syntax:
+var meals = {};
+The curly braces {} are an object! You just created your first one!
+
+Object Constructor:
+var meals = new Object();
+
+var meals = new Object({breakfast: 'oatmeal'})
+
+var firstMeal = 'breakfast'
+Top Tip: ES 6 provides a way to use variables as object keys -- you have to wrap the key in square brackets []. Using the above example, you could write var meals = {[firstMeal]: 'oatmeal'} and then meals would be {breakfast: 'oatmeal'}.
+
+We can access the values in an object using dot notation
+meals.breakfast // 'oatmeal'
+or square-bracket notation
+meals['breakfast'] // 'oatmeal'
+
+Note that when we use dot syntax, we do not wrap the key in quotes, and the key must be avble to be treated as a string. square-bracket syntax requires quotes if we're reference the key directly but it also gives us additional flexibility -- we could also do
+meals[firstMeal] // 'oatmeal'
+using the firstMeal varaible (which is equal to the string 'breakfast'). What if we tried using dot notation with our firstMeal variable?
+
+meals.firstMeal // undefined
+When we use dot notation the key is always taken as the literal string provided. We must use brack notation if we want to access (or delete) values that belong to a variable key.
+
+Adding to an Object
+var meals = {breakfast:'oatmeal', lunch: 'burrito', dinner: 'steak'}
+We can add new key-value pairs to objects. If we know the name of the key and its value, we can use the dot syntax to add the new pair:
+meals.snack = 'yogurt';
+See that dot? That has a special meaning fo objects -- it tells JS that we're going to be accessing the property that goes by the string that comes after it (in this case, 'snack'). So here, we assign = the value 'yogurt' to the key snack' in the object. We can access this new value as before:
+meals.snack // 'yogurt'
+meals['snack'] // 'yogurt'
+
+We can also add key-value pairs using brack notation:
+meals['second breakfast'] = 'bagel'
+This comes in handy, as in the above example, when our key is not a simple string. We can also use variables as keys this way:
+var sweetMeal = 'dessert';
+meals[sweetMeal] = 'cake';
+meals.dessert // 'cake'
+meals[sweetMeal] // 'cake'
+
+We can update existing key-value pairs by using the key:
+meals.breakfast = 'cereal'
+Note that all of the changes highlighted above are destructive. This means that if we apply these changes to an object by passing the object to a function, the original object will change. Let's try it out:
+function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
+  obj[key] = value
+
+  return obj
+}
+
+const recipe = { eggs: 3 }
+
+destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
+// returns { eggs: 3, flour: '3 cups' }
+
+// but also:
+
+recipe // { eggs: 3, flour: '3 cups' }
+
+What if that's not what we wanted to do? What if we wanted to create a new object that stores both he old and the new properties?
+
+Object.assign()
+We can use Object.assign() to create a new object and pass it properties from existing objects. The first value is the target object that gets modified. All the values afterward can be any number of objects. It then copies them from left to right onto the target object(so if two objects share a key, the right-most object's value for that key will win).
