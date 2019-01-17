@@ -2,6 +2,15 @@ var playlist = {
   'Bob Marley': 'Redemption Song'
 };
 
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle;
+  return playlist;
+}
+
+function removeFromPlaylist(playlist, artistName) {
+  return delete playlist[artistName];
+}
+
 /*
   it('defines an object called `playlist` containing at least one artist-song pair', () => {
     expect(typeof playlist).to.equal('object')
