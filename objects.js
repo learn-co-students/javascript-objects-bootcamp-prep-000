@@ -1,14 +1,6 @@
 var playlist = {
-  Eminem: "Not Afraid"
+  'Bob Marley': 'Redemption Song'
 };
-
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
-}
-
-function removeFromPlaylist(playlist, artistName) {
-  return delete playlist[artistName];
-}
 
 /*
   it('defines an object called `playlist` containing at least one artist-song pair', () => {
