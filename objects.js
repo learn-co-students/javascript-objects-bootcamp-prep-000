@@ -1,10 +1,10 @@
 var playlist = {
-  'Bob Marley': 'Redemption Song'
+  'Eminem': 'The Real Slim Shady'
 };
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
-  return playlist;
+ playlist[artistName] = songTitle;
+ return playlist;
 }
 
 function removeFromPlaylist(playlist, artistName) {
