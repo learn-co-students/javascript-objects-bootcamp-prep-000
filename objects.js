@@ -3,11 +3,11 @@ var playlist = {
   'The Dead': 'Cassidy', 
   'Allman Brothers': 'Stormy Monday'
 };
-function updatePlaylist(object, key, value) {
-  object[key] = value;
-  return object;
+function updatePlaylist(obj, key, value) {
+  obj[key] = value;
+  return obj;
 }
-function removeFromPlaylist(object, key) {
-  delete object[key];
-  return object;
+function removeFromPlaylist(obj, key) {
+  delete obj[key];
+  return obj;
 }
