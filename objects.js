@@ -1,5 +1,5 @@
 var playlist = {
-  'Bob Dylan': 'Like a Rolling Stone'
+  'Jimmy Hendrix': 'All Along the Watchtower'
 };
 
 function updatePlaylist(playlist, artistName, songTitle) {
