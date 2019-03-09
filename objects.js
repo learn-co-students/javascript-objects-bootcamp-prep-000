@@ -1,10 +1,9 @@
 var playlist = {
-  'Jimmy Hendrix': 'All Along the Watchtower'
+  'Bob Marley': 'One Love'
 };
 
 function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName] = songTitle;
-  return playlist;
+  playlist[artistName] =songTitle;
 }
 
 function removeFromPlaylist(playlist, artistName) {
