@@ -6,6 +6,10 @@ const fs = require('fs')
 const jsdom = require('mocha-jsdom')
 const path = require('path')
 
+
+
+
+
 describe('objects', () => {
   const babelResult = babel.transformFileSync(
     path.resolve(__dirname, '..', 'objects.js'), {
@@ -47,3 +51,15 @@ describe('objects', () => {
     })
   })
 })
+
+
+var playlist = {artistName:"song"};
+
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName]=songTitle;
+}
+
+
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName];
+}
