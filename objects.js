@@ -1,27 +1,16 @@
-var playlist ;{
- playlist: ['Shallow'] ['Lady Gaga']
- playlist: ['Ring'] 'Cardi B'
+var playlist = {
+'Lady Gaga':'Shallow', 
+'Cardi B': 'Ring'
 };
 
-var updatePlaylist ;{
-  playlist: ['Indie'],
-  artist name:['Tame Impala'],
-  song title: ['Keep On Lying']
+var updatePlaylist = (playlist, artist, song) ;{
+  Pop['Tayla Parx'] = 'I Want You',
+  Rap['J Cole'] = 'Middle',
+  Alternative ['Tame Impala'] = 'Alter Ego';
+  return playlist;
 }
 
-var removeFromPlaylist ;{
-  delete.var playlist;
-  playlist;
+var removeFromPlaylist = (playlist, artist) ;{
+  delete Pop['Tayla Parx'];
+  return playlist;
 }
-
-var updatePlaylist ;{
-  playlist: ['Indie'],
-  artist name:['Tame Impala'],
-  song title: ['Keep On Lying']
-}
-
-Object.assign({}, playlist, {'Indie','Tame Impala','Keep On Lying' })
-
-
-
-playlist
