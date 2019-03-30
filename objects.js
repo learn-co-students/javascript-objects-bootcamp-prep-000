@@ -1,11 +1,11 @@
-var playlist = { 'My Bloody Valentine': "Sometimes"}
+var playlist = {artist: 'songTitle'}
 
-function updatePlaylist(playlist, artistName, songTitle){
-playlist[artistName] = songTitle
-return playlist
+function updatePlaylist (playist, artistName, songTitle){
+  playlist[artistName] = 'songTitle'
+  return playlist
 }
 
 function removeFromPlaylist(playlist, artistName){
-delete playlist[artistName]
-return playlist
+  delete playlist[artistName]
+  return playlist
 }
