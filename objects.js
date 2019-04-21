@@ -1,13 +1,13 @@
 var playlist = {
-  artist: song
+  artist: 'song'
 }
 
 function updatePlaylist(playlist, 'artist', 'song') {
       playlist.newartist = 'song'
-      return playlist
+      return updatePlaylist
 }
 
 function removeFromPlaylist(playlist, 'artist', 'song'){
   delete playlist.artist
-  return playlist
+  return removeFromPlaylist
 }
