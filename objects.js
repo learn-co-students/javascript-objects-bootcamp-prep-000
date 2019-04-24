@@ -1,4 +1,10 @@
-let [ariana, bowie, lilN, jCole, travis, lilD, drizzy, cal, day, chris, eagles] = ['Ariana Grande', 'David Bowie','Lil Nas X', 'J. Cole', 'Travis Scott', 'Lil Dicky', 'Drake', 'Calvin Harris', 'Dan + Shay', 'Chris Stapleton', 'Eagles'];
+let [ariana, bowie, lilN, 
+jCole, travis, lilD, 
+drizzy, cal, day, 
+chris, eagles] = ['Ariana Grande', 'David Bowie',
+'Lil Nas X', 'J. Cole', 'Travis Scott', 
+'Lil Dicky', 'Drake', 'Calvin Harris', 
+'Dan + Shay', 'Chris Stapleton', 'Eagles'];
 
 var playlist = {
   lilN : 'Old Town Road',
@@ -26,6 +32,9 @@ function updatePlaylist(myPlaylist, artistName, songTitle) {
   return newPlaylist;
 }
 
-function removeFromPlaylist(myPlaylist) {
+function removeFromPlaylist(myPlaylist, artistName) {
+  
+  delete myPlaylist[artistName];
+  return myPlaylist;
   
 }
