@@ -9,6 +9,6 @@ return playlist;
 
 // objects removeFromPlaylist(playlist, artistName) removes `artistName` from `playlist`:
 function removeFromPlaylist(playlist, artistName){
-  delete.playlist['artistName'];
+  delete.playlist.artistName;
   return playlist;
 }
