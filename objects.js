@@ -1,11 +1,11 @@
 var playlist = {Slowdive: 'Alison', MyBloodyValentine: 'Sometimes'};
-function updatePlaylist(obj, key, value) {
-  obj[key] = value
-  return obj
+function updatePlaylist(playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
+  return playlist
 }
 updatePlaylist(playlist, 'Phil Ochs', "Here's to the State of Mississipp")
 
-function removeFromPlaylist(key, value) {
+function removeFromPlaylist(artistName, songTitle) {
   delete playlist.Slowdive
   return playlist
 }
