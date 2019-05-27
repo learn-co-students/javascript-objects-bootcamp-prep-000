@@ -188,7 +188,8 @@ Hm, but what if that's not what we wanted to do? What if we wanted to create a _
 
 ## `Object.assign()`
 
-We can use `Object.assign()` to create a new object and pass it properties from existing objects. The first value is the target object that gets modified. All the values afterward can be any number of objects. It then copies them from left to right onto the target object (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
+We can use `Object.assign()` to create a new object and pass it properties from existing objects. The first value is the target object that gets modified. All the values afterward can be any number of objects. It then copies them from left to 
+right onto the target object (so if two objects share a key, the right-most object's value for that key will win). Let's try it out:
 
 ``` javascript
 Object.assign({}, { foo: 'bar' })
