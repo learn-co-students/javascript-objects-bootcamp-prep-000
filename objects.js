@@ -1,7 +1,11 @@
 var playlist = {
-  artist: "song",
+ Slowdive: 'Allison',
+ MyBloodyValentine: 'Sometimes'
   };
 
- var updatePlaylist ('playlist', 'artistName', 'songTitle') {
-   
- }
+
+  function updatePlaylist (playlist, artistName, songTitle) {
+    updatePlaylist (playlist, 'Phil Ochs', 'Heres to the State of Mississippi')
+  return Object.assign({}, playlist, { [key]: value })
+  }
+  
