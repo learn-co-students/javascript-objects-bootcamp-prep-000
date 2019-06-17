@@ -1,16 +1,20 @@
-var playlist = {tool:"laterlaus"};
+var playlist = {tool:"laterlaus"}
 
 function updatePlaylist(playlist, artistName, songTitle){
 
-  return Object.assign(playlist, {[artistName]:songTitle})
+  Object.assign(playlist, {[artistName]:songTitle})
+  return playlist
 }
 
-updatePlaylist(playlist, "My Bloody Valentine", "Sometimes");
+updatePlaylist(playlist, "My Bloody Valentine", "Sometimes")
 
 function removeFromPlaylist(playlist, artistName){
 
-  delete playlist.artistName
+delete playlist[artistName]
+return playlist
+
+
 
 }
 
-removeFromPlaylist(playlist, tool);
+removeFromPlaylist(playlist, "Slowdive")
