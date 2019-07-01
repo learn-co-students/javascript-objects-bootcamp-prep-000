@@ -1,2 +1,11 @@
-var playlist= {curve:"fait accompli"}
-function updatePlaylist= {playlist:"old ruubish", songtitle:'wandering star', artist:"portishead"}
+var playlist= {xxx: "intro"};
+function updatePlaylist (playlist, artist,songtitle){
+  playlist[artist] = songtitle
+  return playlist
+}
+function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist]
+return playlist}
+
+
+
