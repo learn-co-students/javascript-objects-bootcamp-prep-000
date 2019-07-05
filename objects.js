@@ -1,5 +1,4 @@
-var artist = Wale;
-var song = The_Bloom;
+
 
 var playlist = { 
   Wale: "The Bloom",
@@ -7,7 +6,12 @@ var playlist = {
 };
 
 
-updatePlaylist(playlist,artist,song) {
+function updatePlaylist(playlist,artist,song) {
   playlist[artist] = song
   return playlist
+}
+
+function removeFromPlaylist(playlist,artist) {
+  delete playlist[artist];
+  return playlist;
 }
