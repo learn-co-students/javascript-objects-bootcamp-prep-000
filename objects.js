@@ -21,7 +21,7 @@ removeFromPlaylist(playlist, 'Slowdive')
 */
 
 /*
-//preset: ES2015(ES6)
+//preset: ES2015 // (ES6)
 const playlist = {
   "Slowdive": "Alison",
   "My Bloody Valentine": "Sometimes"
