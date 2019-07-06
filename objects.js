@@ -8,9 +8,14 @@ function updatePlaylist(playlist, artistName, songTitle) {
   return playlist
 }
 updatePlaylist(playlist, 'Phil Ochs', "Here's to the State of Mississippi")
-
+/*
+{ Slowdive: 'Alison', 'My Bloody Valentine': 'Sometimes', 'Phil Ochs': 'Here\'s to the State of Mississippi' }
+*/
 function removeFromPlaylist(playlist, artistName) {
   delete playlist[artistName]
   return playlist
 }
 removeFromPlaylist(playlist, 'Slowdive')
+/*
+{ 'My Bloody Valentine': 'Sometimes', 'Phil Ochs': 'Here\'s to the State of Mississippi' }
+*/
