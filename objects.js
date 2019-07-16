@@ -1,4 +1,4 @@
-var playlist = new Object({artist:'Replacements',song:'Waitress In The Sky'});
+var playlist = new Object({artistName:'Replacements',songTitle:'Waitress In The Sky'});
 
 function updatePlaylist(playlist, artistName, songTitle){
   playlist[artistName] = songTitle
@@ -7,5 +7,5 @@ function updatePlaylist(playlist, artistName, songTitle){
 // updatePlaylist(playlist, 'artistName', 'songTitle')
 
 function removeFromPlaylist(playlist, artistName){
-  delete playlist.artistName
+  delete playlist[artistName]
 }
