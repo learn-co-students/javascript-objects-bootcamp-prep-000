@@ -1,7 +1,8 @@
 var playlist = {
   BTS: "Boy with Luv(feat.Halsey)",
   Lizzo: "Truth Hurts",
-  Led_Zeppelin : "Stairway to Heaven"
+  'Led Zeppelin' : "Stairway to Heaven",
+  'The Beatles' : "All you Need is Love"
 };
 
 function updatePlaylist(playlist, artistName, songTitle) {
