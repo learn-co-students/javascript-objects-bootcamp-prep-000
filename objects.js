@@ -1,13 +1,13 @@
 var playlist = {
-  Air: 'Moon Safari'
+  Slowdive:"Alison"
 }
 
-function updatePlaylist(playlist, artistName, song){
-  playlist[artist] = song
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle
   return playlist
 }
 
 function removeFromPlaylist(playlist, artistName){
- delete playlist.artistName
+ delete playlist.Slowdive
  return playlist
 }
