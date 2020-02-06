@@ -1,5 +1,5 @@
 /*global describe, it */
-
+var objects = require("../objects.js")
 const expect = require('chai').expect
 const babel = require('babel-core')
 const fs = require('fs')
