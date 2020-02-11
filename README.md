@@ -159,6 +159,13 @@ meals.dessert // 'cake'
 meals[sweetMeal] // 'cake'
 ```
 
+> **Note:** In JavaScript, when we name variables and functions, we use the 'camelCase'
+naming convention. That is to say - if a variable or function is named using a single word,
+that word starts with a lowercase letter. If multiple words are used, every subsequent word
+after the first starts with a capitalized letter. `sweetMeal` is an example of this. We will
+see more examples in a moment. Keep this in mind as tests will often expect this convention
+as well!
+ 
 Lest it seem like we can only add new things, we can update existing key-value pairs by using the key:
 
 ``` javascript
