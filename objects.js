@@ -4,4 +4,4 @@ function updatePlaylist(obj, key, value){
    return obj
 }
 
-playlist={songTitle:"Moon Light"}
+updatePlaylist(playlist,"songTitle","Moon Light")
