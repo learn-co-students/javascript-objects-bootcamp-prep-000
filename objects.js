@@ -9,7 +9,8 @@ updatePlaylist(playlist,"songTitle","Moon Light")
 
 function removeFromPlaylist(obj, key){
    
-  delete obj.key
-   return obj
+  delete playlist.artistName
 }
+
 removeFromPlaylist(playlist,"artistName")
+
