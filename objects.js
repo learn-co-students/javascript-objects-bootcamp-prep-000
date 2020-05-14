@@ -1,10 +1,10 @@
 var playlist = {DaftPunk: "Robot Rock"}
 
-function updatePlaylist(object, key, value){
-  object[key] = value;
-  return object;
+function updatePlaylist(playlist, artist, song){
+  playlist[artist] = song;
+  return playlist;
 }
 
-function removeFromPlaylist(object, key){
-  delete object[key];
+function removeFromPlaylist(playlist, artist){
+  delete playlist[artist];
 }
