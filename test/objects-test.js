@@ -1,5 +1,5 @@
 /*global describe, it */
-
+/*
 const expect = require('chai').expect
 const babel = require('babel-core')
 const fs = require('fs')
@@ -47,3 +47,4 @@ describe('objects', () => {
     })
   })
 })
+*/
